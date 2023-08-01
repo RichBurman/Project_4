@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-richburman-project-4-vahw1sykkl.us2.codeanyapp.com', "rbproject-4.herokuapp.com"]
+    '8000-richburman-project-4-vahw1sykkl.us2.codeanyapp.com', "rbproject-4.herokuapp.com", "rbproject-4-c2dc0a612356.herokuapp.com"]
 
 # Application definition
 
