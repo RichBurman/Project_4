@@ -3,4 +3,8 @@ from .models import Trip
 
 # Register your models here.
 
-admin.site.register(Trip)
+
+@admin.register(Trip)
+class TripAdmin(admin.ModelAdmin):
+    list_display = ('trip_id', 'trip_name', 'date', 'price', )
+    search_fields = ('trip_name',)
