@@ -12,4 +12,4 @@ class Trip(models.Model):
     date = models.DateField()
 
     def __str__(self):
-        return "{self.trip_id} {trip_name}"
+        return f"Name: {self.trip_name} Number: {self.trip_id}"
