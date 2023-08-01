@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block content %}
+
+<div>
+  <h2>HTML page!</h2>
+
+  <div>
+    {% for trip in trip_list %}
+    <p>{{ trip.trip_name }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
