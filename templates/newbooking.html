@@ -2,12 +2,13 @@
 {% extends "base.html" %} {% block content %}
 
 <h1>Make a new booking</h1>
-<form method="POST" action="add">
-  {% csrf_token %} {{ form }}
+{% if user.is_authenticated %}
+<form method="POST" action="add" {{ form }} {% csrf_token %}>
   <div>
     <p>
       <button type="submit">Book new trip</button>
     </p>
+    {% endif %}
   </div>
 </form>
 {% endblock %}

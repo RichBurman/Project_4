@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.views import generic
 from .models import Trip, Booking
 from .forms import BookingForm
+from django.contrib.auth.models import User
 
 # Create your views here.
 
@@ -25,6 +26,7 @@ def newbooking(request):
     if request.method == "POST":
         form = BookingForm(request.POST)
         if form.is_valid():
+            form.instance.user = request.user
             form.save()
             return redirect('home')
     form = BookingForm()
