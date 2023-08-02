@@ -1,32 +1,29 @@
 {% extends "base.html" %} {% block content %}
 
-<div>
-    <h2>Welcome to the index HTML page </h2>
+<h2>Welcome to the index HTML page</h2>
 
-    <div>
-        {% for trip in trip_list %}
-    </div>
-    <div>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>ID</th>
-                <th>Seats</th>
-                <th>Remaining Seats</th>
-                <th>Price (£)</th>
+<table>
+  <thread>
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Seats</th>
+      <th>Remaining Seats</th>
+      <th>Price (£)</th>
+    </tr>
 
-            <tr>
-                <td>{{ trip.trip_name}}</td>
-                <td>{{ trip.trip_id}}</td>
-                <td>{{ trip.seats}}</td>
-                <td>{{ trip.remaining_seats}}</td>
-                <td>{{ trip.price}}</td>
-            </tr>
-            <tr>
-                
-            </tr>
-        </table>
-
+    <tr></tr
+  ></thread>
+  <tbody>
+    {% for trip in trip_list %}
+    <tr>
+      <td>{{ trip.trip_name}}</td>
+      <td>{{ trip.trip_id}}</td>
+      <td>{{ trip.seats}}</td>
+      <td>{{ trip.remaining_seats}}</td>
+      <td>{{ trip.price}}</td>
+    </tr>
     {% endfor %}
-
-    {% endblock %}
+  </tbody>
+</table>
+{% endblock %}

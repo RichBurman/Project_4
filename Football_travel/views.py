@@ -7,6 +7,4 @@ from .models import Trip
 
 class TripList(generic.ListView):
     model = Trip
-    queryset = Trip.objects.order_by('trip_id',)
     template_name = 'index.html'
-
