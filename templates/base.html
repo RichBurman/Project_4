@@ -22,12 +22,13 @@
   <body>
     <nav>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Login</a></li>
-        <li><a href="">Sign Up</a></li>
-        <li><a href="">Upcoming Games</a></li>
-        <li><a href="">Upcoming Games</a></li>
-        <li><a href="">About Us</a></li>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'account_logout' %}">Logout</a></li>
+        {% else %}
+        <li><a href="{% url 'account_signup' %}">Register</a></li>
+        <li><a class="nav-link" href="{% url 'account_login' %}">Login</a></li>
+        {% endif %}
       </ul>
     </nav>
     <main>{% block content %} {% endblock content %}</main>
