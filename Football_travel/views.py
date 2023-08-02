@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import generic
 from .models import Trip, Booking
 
@@ -18,3 +18,15 @@ class BookingList(generic.ListView):
         context = super().get_user_bookings()
         context['Booking'] = self.request.user.booking_set.all()
         return context
+
+def newbooking(request):
+    if request.method =="POST":
+        form = BookingForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+        form = BookingForm()
+        context = {
+            'form': form
+        }
+        return render(request, 'project4/newbooking.html', context)
