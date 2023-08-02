@@ -27,8 +27,8 @@ def newbooking(request):
         if form.is_valid():
             form.save()
             return redirect('home')
-        form = BookingForm()
-        context = {
-            'form': form
-        }
-        return render(request, 'newbooking.html', context)
+    form = BookingForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'newbooking.html', context)
