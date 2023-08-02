@@ -16,6 +16,7 @@ class Trip(models.Model):
     def __str__(self):
         return f"Name: {self.trip_name} ID Number: {self.trip_id}"
 
+
 class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     date = models.DateField(blank=False)
