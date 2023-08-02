@@ -31,4 +31,4 @@ def newbooking(request):
         context = {
             'form': form
         }
-        return render(request, 'project4/newbooking.html', context)
+        return render(request, 'newbooking.html', context)

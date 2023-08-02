@@ -1,0 +1,13 @@
+<!-- This is where a user can make a new booking -->
+{% extends "base.html" %} {% block content %}
+
+<h1>Make a new booking</h1>
+<form method="POST" action="add">
+  {% csrf_token %} {{ form.BookingForm }}
+  <div>
+    <p>
+      <button type="submit">Book new trip</button>
+    </p>
+  </div>
+</form>
+{% endblock %}
