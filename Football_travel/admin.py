@@ -10,7 +10,6 @@ class TripAdmin(admin.ModelAdmin):
     search_fields = ('trip_name',)
 
 
-
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
     list_display = ('user', 'trip_booked')

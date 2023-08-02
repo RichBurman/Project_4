@@ -1,4 +1,31 @@
 <!-- This is where a user can view, edit and delete their bookings -->
-{% extends "base.html" %} {% block content %} {% endblock %}
+{% extends "base.html" %} {% block content %}
 
 <h2>My bookings!!!</h2>
+
+<table>
+  <thread>
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Seats</th>
+      <th>Remaining Seats</th>
+      <th>Price</th>
+    </tr>
+
+    <tr></tr>
+  </thread>
+  <tbody>
+    {% for booking in user.booking_set.all %}
+    <tr>
+      <td>{{ booking.trip_booked }}</td>
+      <td>{{ booking.comment }}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

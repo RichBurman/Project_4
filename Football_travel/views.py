@@ -15,4 +15,6 @@ class BookingList(generic.ListView):
     model = Booking
 
     def get_user_bookings(self, **kwargs):
-        return get_user_bookings(Booking=self.request.user.booking_set.all(), **kwargs)
+        context = super().get_user_bookings(**kwargs)
+        context['Booking'] = self.request.user.booking_set.all()
+        return context
