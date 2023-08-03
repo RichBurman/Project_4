@@ -46,6 +46,7 @@ def editbooking(request, booking_id):
         if form.is_valid():
             form.instance.user = request.user
             form.save()
+            messages.success(request, "Booking has been edited successfully!")
             return redirect('mybookings')
     form = BookingForm(instance=booking)
     context = {
