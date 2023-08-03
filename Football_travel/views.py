@@ -28,7 +28,7 @@ def newbooking(request):
         if form.is_valid():
             form.instance.user = request.user
             form.save()
-            return redirect('home')
+            return redirect('mybookings')
     form = BookingForm()
     context = {
         'form': form
