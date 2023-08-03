@@ -3,6 +3,7 @@ from django.views import generic
 from .models import Trip, Booking
 from .forms import BookingForm
 from django.contrib.auth.models import User
+from django.contrib import messages
 
 # Create your views here.
 
@@ -28,11 +29,13 @@ def newbooking(request):
         if form.is_valid():
             form.instance.user = request.user
             form.save()
+            messages.success(request, "Booking has been successfully made!")
             return redirect('mybookings')
     form = BookingForm()
     context = {
         'form': form
     }
+    
     return render(request, 'newbooking.html', context)
 
 
