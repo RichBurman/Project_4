@@ -7,4 +7,3 @@ class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
         fields = ['date', 'comment', 'trip_booked',]
-
