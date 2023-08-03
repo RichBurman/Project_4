@@ -10,6 +10,7 @@
     <tr>
       <th>Trip Booked</th>
       <th>Comments</th>
+      <th>Seats Required</th>
       <th>Edit Booking</th>
       <th>Delete Booking</th>
       <th></th>
@@ -22,6 +23,7 @@
     <tr>
       <td>{{ booking.trip_booked }}</td>
       <td>{{ booking.comment }}</td>
+      <td>{{ booking.seats_required }}</td>
       <td>
         <a href="{% url 'editbooking' booking.id %}">
           <button>Edit</button>
