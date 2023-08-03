@@ -44,7 +44,7 @@ def editbooking(request, booking_id):
             form.instance.user = request.user
             form.save()
             return redirect('mybookings')
-    form = BookingForm()
+    form = BookingForm(instance=booking)
     context = {
         'form': form
     }
