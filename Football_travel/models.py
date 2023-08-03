@@ -8,7 +8,7 @@ from cloudinary.models import CloudinaryField
 class Trip(models.Model):
     trip_name = models.CharField(max_length=50)
     trip_id = models.AutoField(primary_key=True)
-    seats = models.IntegerField()
+    seats = models.IntegerField(default=80)
     remaining_seats = models.IntegerField()
     price = models.IntegerField()
     date = models.DateField()
