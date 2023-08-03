@@ -38,14 +38,14 @@ def newbooking(request):
 
 def editbooking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
-    if request.method == 'Post':
+    if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
             form.instance.user = request.User
             form.save()
             return redirect('mybookings')
-        form = BookingForm()
-        context = {
+    form = BookingForm()
+    context = {
             'form': form
         }
-        return render(request, 'mybooking.html', context)
+    return render(request, 'mybooking.html', context)
