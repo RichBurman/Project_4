@@ -3,12 +3,7 @@
 
 <h1>Edit a booking</h1>
 {% if user.is_authenticated %}
-<form method="POST" action="edit" {{ form }} {% csrf_token %}>
-  <div>
-    <p>
-      <button type="submit">Book new trip</button>
-    </p>
-    {% endif %}
-  </div>
+<form method="POST" {{ form }} {% csrf_token %}>
+  <input type="submit" value="Submit" /> {% endif %}
 </form>
 {% endblock %}

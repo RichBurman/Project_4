@@ -41,11 +41,11 @@ def editbooking(request, booking_id):
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
-            form.instance.user = request.User
+            form.instance.user = request.user
             form.save()
             return redirect('mybookings')
     form = BookingForm()
     context = {
-            'form': form
-        }
-    return render(request, 'mybooking.html', context)
+        'form': form
+    }
+    return render(request, 'editbooking.html', context)
