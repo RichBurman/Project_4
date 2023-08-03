@@ -23,6 +23,7 @@ class Booking(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     comment = models.TextField(blank=True)
     trip_booked = models.ForeignKey(Trip, on_delete=models.CASCADE)
+    seats_required = models.DecimalField(decimal_places=0, max_digits=2, default=1)
 
 
 def __str__(self):
