@@ -25,6 +25,5 @@ class Booking(models.Model):
     trip_booked = models.ForeignKey(Trip, on_delete=models.CASCADE)
     seats_required = models.IntegerField()
 
-
-def __str__(self):
-    return f"User: {self.user} booked {self.trip_booked} on {self.created_on}"
+    def __str__(self):
+        return f"User: {self.user} booked {self.trip_booked} on {self.created_on}"
