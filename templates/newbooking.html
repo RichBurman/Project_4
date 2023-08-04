@@ -3,7 +3,7 @@
 
 <h1>Make a new booking</h1>
 {% if user.is_authenticated %}
-<form method="POST" action="add">
+<form method="POST" action="add" class="form-style">
   {{ form | crispy }} {% csrf_token %}
   <div>
     <p>
