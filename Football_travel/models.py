@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from datetime import date
 
 # Create your models here.
 
@@ -19,7 +20,7 @@ class Trip(models.Model):
 
 class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    date = models.DateField(blank=False)
+    date = models.DateField(blank=False, default=date.today)
     created_on = models.DateTimeField(auto_now_add=True)
     comment = models.TextField(blank=True)
     trip_booked = models.ForeignKey(Trip, on_delete=models.CASCADE)
