@@ -1,5 +1,5 @@
 from django import forms
-from .models import Booking
+from .models import Booking, Trip
 from django.contrib.auth.models import User
 
 
