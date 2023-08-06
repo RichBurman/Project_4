@@ -48,7 +48,7 @@ def newbooking(request):
 
                 messages.success(
                     request, "Booking has been successfully made!")
-                return redirect('mybookings')
+                return redirect('booking_success', booking_id=booking.id)
     else:
         form = BookingForm()
 
@@ -72,6 +72,7 @@ def editbooking(request, booking_id):
             updated_booking = form.save(commit=False)
             trip = booking.trip_booked
             remaining_seats = trip.remaining_seats
+
             if updated_booking.seats_required > remaining_seats + original_seats_required:
                 messages.error(
                     request, f"Sorry, there are only {remaining_seats} seats available. You are unable to book  {updated_booking.seats_required} seats.")
@@ -100,3 +101,18 @@ def deletebooking(request, booking_id):
     booking.delete()
     messages.success(request, "Booking has been deleted!")
     return redirect('mybookings')
+
+    from django.shortcuts import render
+
+
+def booking_success(request, booking_id):
+    booking = Booking.objects.get(id=booking_id)
+
+    context = {
+
+        'booking': booking
+
+
+    }
+
+    return render(request, 'booking_success.html', context)

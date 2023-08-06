@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block content %}
+
+<h1>Booking Confirmation</h1>
+
+<p>Booking Details</p>
+<ul>
+  <li>Trip Booked : {{ booking.trip_booked }}</li>
+  <li>Seats Booked : {{ booking.seats_required }}</li>
+</ul>
+
+{% endblock %}
