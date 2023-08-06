@@ -36,6 +36,7 @@ def newbooking(request):
 
             trip = booking.trip_booked
             remaining_seats = trip.remaining_seats
+            total_cost = trip.price * booking.seats_required
 
             if booking.seats_required > remaining_seats:
                 messages.error(
@@ -106,13 +107,11 @@ def deletebooking(request, booking_id):
 
 
 def booking_success(request, booking_id):
-    booking = Booking.objects.get(id=booking_id)
+    booking = get_object_or_404(Booking, id=booking_id)
 
+    total_cost = booking.trip_booked.price * booking.seats_required
     context = {
-
-        'booking': booking
-
-
+        'booking': booking,
+        'total_cost': total_cost
     }
-
     return render(request, 'booking_success.html', context)
