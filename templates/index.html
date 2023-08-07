@@ -6,8 +6,8 @@
   <table class="center-table">
     <thread>
       <tr>
-        <th>Name</th>
-        <th>ID</th>
+        <th>Trip ID</th>
+        <th>Trip Name</th>
         <th>Seats</th>
         <th>Remaining Seats</th>
         <th>Price (£)</th>
@@ -18,11 +18,11 @@
     <tbody>
       {% for trip in trip_list %}
       <tr>
-        <td>{{ trip.trip_name}}</td>
         <td>{{ trip.trip_id}}</td>
+        <td>{{ trip.trip_name}}</td>
         <td>{{ trip.seats}}</td>
         <td>{{ trip.remaining_seats}}</td>
-        <td>{{ trip.price}}</td>
+        <td>£ {{ trip.price}} per seat</td>
       </tr>
       {% endfor %}
     </tbody>
