@@ -4,7 +4,7 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: lightblue;
+    background-color: white;
 }
 
 .container {
@@ -44,13 +44,32 @@ main {
 }
 
 
-/* center table */
+/* Style tables */
 
 .center-table {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
+}
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ea4040;
 }
 
 /* footer style */
