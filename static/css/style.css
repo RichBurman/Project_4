@@ -1,9 +1,7 @@
+/* Style for main */
+
 main {
     background-color: lightblue
-}
-
-.form-style {
-    margin: 10px
 }
 
 .container {
@@ -14,6 +12,12 @@ main {
     margin-bottom: 25px;
 }
 
+
+/* Style for forms */
+.form-style {
+    margin: 10px
+}
+
 .login button {
     margin-bottom: 25px
 }
@@ -21,7 +25,6 @@ main {
 .signup {
     display: flex;
     flex-direction: column;
-
     padding: 20px;
     max-width: 400px;
     margin: 0 auto;
@@ -36,6 +39,41 @@ main {
     margin-bottom: 10px;
 }
 
-/* .input-group {
-    width: 100%
-} */
+/* footer style */
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    background-color: #4267b2;
+}
