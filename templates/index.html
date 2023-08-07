@@ -1,33 +1,31 @@
 {% extends "base.html" %} {% block content %}
 
-<div>
+<div class="container">
+  <h1>Manchester United Supporters Away Travel Company</h1>
 
-    <h1>Manchester United Supporters Away Travel Company</h1>
+  <table class="center-table">
+    <thread>
+      <tr>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Seats</th>
+        <th>Remaining Seats</th>
+        <th>Price (£)</th>
+      </tr>
 
-    <table>
-  <thread>
-    <tr>
-      <th>Name</th>
-      <th>ID</th>
-      <th>Seats</th>
-      <th>Remaining Seats</th>
-      <th>Price (£)</th>
-    </tr>
-
-    <tr></tr
-  ></thread>
-  <tbody>
-    {% for trip in trip_list %}
-    <tr>
-      <td>{{ trip.trip_name}}</td>
-      <td>{{ trip.trip_id}}</td>
-      <td>{{ trip.seats}}</td>
-      <td>{{ trip.remaining_seats}}</td>
-      <td>{{ trip.price}}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
-
+      <tr></tr
+    ></thread>
+    <tbody>
+      {% for trip in trip_list %}
+      <tr>
+        <td>{{ trip.trip_name}}</td>
+        <td>{{ trip.trip_id}}</td>
+        <td>{{ trip.seats}}</td>
+        <td>{{ trip.remaining_seats}}</td>
+        <td>{{ trip.price}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
 {% endblock %}

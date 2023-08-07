@@ -103,8 +103,6 @@ def deletebooking(request, booking_id):
     messages.success(request, "Booking has been deleted!")
     return redirect('mybookings')
 
-    from django.shortcuts import render
-
 
 def booking_success(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
