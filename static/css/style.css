@@ -16,6 +16,35 @@ main {
     margin-bottom: 25px;
 }
 
+/* Style for Hero Image */
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background-image: url(../../media/images/hero_image.jpg) no-repeat center center;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#hero-outer {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* zoom for hero images */
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
 
 /* Style for forms */
 .form-style {
@@ -71,6 +100,7 @@ th {
 tbody tr:nth-child(odd) {
     background-color: #ea4040;
 }
+
 
 /* footer style */
 
