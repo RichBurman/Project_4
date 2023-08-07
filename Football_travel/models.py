@@ -20,12 +20,12 @@ class Trip(models.Model):
 
 
 class Booking(models.Model):
-    user=models.ForeignKey(User, on_delete=models.CASCADE)
-    date=models.DateField(blank=False, default=date.today)
-    created_on=models.DateTimeField(auto_now_add=True)
-    comment=models.TextField(blank=True)
-    trip_booked=models.ForeignKey(Trip, on_delete=models.CASCADE)
-    seats_required=models.IntegerField()
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    date = models.DateField(blank=False, default=date.today)
+    created_on = models.DateTimeField(auto_now_add=True)
+    comment = models.TextField(blank=True)
+    trip_booked = models.ForeignKey(Trip, on_delete=models.CASCADE)
+    seats_required = models.IntegerField()
 
     def __str__(self):
         return f"User: {self.user} booked {self.trip_booked} on {self.created_on}"
