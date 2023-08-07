@@ -87,6 +87,13 @@
         </div>
         <!--font awesome script-->
         <script src="https://kit.fontawesome.com/7ca4720f9a.js" crossorigin="anonymous"></script>
+        <script>
+            setTimeout(function () {
+                let messages = document.getElementById('msg');
+                let alert = new bootstrap.Alert(messages);
+                alert.close();
+            }, 2500);
+        </script>
     </footer>
 </body>
 
