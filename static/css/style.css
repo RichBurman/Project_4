@@ -192,10 +192,6 @@ footer {
     .button {
         font-size: 16px;
     }
-
-    .center-table {
-        padding: 10px
-    }
 }
 
 /* Medium screen sizes from 950px wide and down */
@@ -217,9 +213,8 @@ footer {
     }
 
     th,
-    td,
-    {
-    padding: 5px;
-}
+    td {
+        padding: 5px;
+    }
 
 }

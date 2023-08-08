@@ -6,16 +6,15 @@
 </div>
 
 <table class="center-table">
-  <thread>
+  <thead>
     <tr>
       <th>Trip Booked</th>
       <th>Comments</th>
       <th>Seats Required</th>
       <th>Edit Booking</th>
       <th>Delete Booking</th>
-      <th></th>
     </tr>
-  </thread>
+  </thead>
   <tbody>
     {% for booking in user.booking_set.all %}
     <tr>
