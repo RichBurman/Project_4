@@ -6,4 +6,10 @@ from django.contrib.auth.models import User
 class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
-        fields = ['date', 'comment', 'trip_booked', 'seats_required']
+        fields = ['date', 'trip_booked', 'seats_required', 'comment']
+        labels = {
+            'date':'Date of Booking',
+            'trip_booked':'Selected Trip',
+            'seats_required':'Number of Seats Required',
+            'comment':'Additional Comments',
+        }
