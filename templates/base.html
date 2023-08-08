@@ -61,7 +61,12 @@
         <li class="navbar-brand">
           <a href="{% url 'addnewbooking' %}">New Booking</a>
         </li>
-        {% else %}
+
+        {% if user.is_staff %}
+        <li class="navbar-brand">
+          <a href="{% url 'admin:index' %}">Admin</a>
+        </li>
+        {% endif %} {% else %}
         <li class="nav-brand">
           <a class="navbar-brand" href="{% url 'home' %}">Home</a>
         </li>
