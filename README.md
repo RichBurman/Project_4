@@ -30,6 +30,16 @@
       - [How to Fork](#how-to-fork)
       - [How to Clone](#how-to-clone)
   - [Testing](#testing)
+    - [W3C Validator](#w3c-validator)
+    - [Solved Bugs](#solved-bugs)
+    - [Known Bugs](#known-bugs)
+    - [Lighthouse](#lighthouse)
+      - [Index Page](#index-page)
+      - [Base HTML](#base-html)
+      - [New Booking](#new-booking)
+      - [Edit Booking](#edit-booking)
+      - [Booking Success](#booking-success)
+      - [My Bookings](#my-bookings)
   - [Credits](#credits)
     - [Code Used](#code-used)
     - [Content](#content)
@@ -109,6 +119,28 @@
 #### How to Clone
 
 ## Testing
+
+- Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along.
+
+### W3C Validator
+
+### Solved Bugs
+
+### Known Bugs
+
+### Lighthouse
+
+#### Index Page
+
+#### Base HTML
+
+#### New Booking
+
+#### Edit Booking
+
+#### Booking Success
+
+#### My Bookings
 
 ## Credits
 
