@@ -2,11 +2,36 @@
 
 <h1>Booking Confirmation</h1>
 
-<p>Booking Details</p>
-<ul>
-  <li>Trip Booked : {{ booking.trip_booked }}</li>
-  <li>Seats Booked : {{ booking.seats_required }}</li>
-  <li>Total cost : {{ total_cost }}</li>
-</ul>
+<div>
+  <table class="center-table">
+    <thread>
+      <tr>
+        <th>Trip Booked</th>
+        <th>Seats Booked</th>
+        <th>Total Cost</th>
+      </tr>
+
+      <tr></tr>
+    </thread>
+    <tbody>
+      <tr>
+        <td>{{ booking.trip_booked }}</td>
+        <td>{{ booking.seats_required }}</td>
+        <td>£{{ total_cost }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div>
+  <a href="{% url 'editbooking' booking.id %}">
+    <button class="booking-button">Edit</button>
+  </a>
+</div>
+<div>
+  <a href="{% url 'deletebooking' booking.id %}">
+    <button class="booking-button">Delete</button>
+  </a>
+</div>
 
 {% endblock %}
