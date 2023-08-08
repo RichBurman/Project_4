@@ -1,41 +1,40 @@
 <!-- This is where a user can view, edit and delete their bookings -->
 {% extends "base.html" %} {% block content %}
 
-<h2>My Bookings</h2>
-
-<div>
-  <table class="center-table">
-    <thread>
-      <tr>
-        <th>Trip Booked</th>
-        <th>Comments</th>
-        <th>Seats Required</th>
-        <th>Edit Booking</th>
-        <th>Delete Booking</th>
-        <th></th>
-      </tr>
-    </thread>
-    <tbody>
-      {% for booking in user.booking_set.all %}
-      <tr>
-        <td>{{ booking.trip_booked.trip_name }}</td>
-        <td>{{ booking.comment }}</td>
-        <td>{{ booking.seats_required }}</td>
-        <td>
-          <a href="{% url 'editbooking' booking.id %}">
-            <button class="booking-button">Edit</button>
-          </a>
-        </td>
-        <td>
-          <a href="{% url 'deletebooking' booking.id %}">
-            <button class="booking-button">Delete</button>
-          </a>
-        </td>
-        <td></td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+<div class="container">
+  <h2>My Bookings</h2>
 </div>
+
+<table class="center-table">
+  <thread>
+    <tr>
+      <th>Trip Booked</th>
+      <th>Comments</th>
+      <th>Seats Required</th>
+      <th>Edit Booking</th>
+      <th>Delete Booking</th>
+      <th></th>
+    </tr>
+  </thread>
+  <tbody>
+    {% for booking in user.booking_set.all %}
+    <tr>
+      <td>{{ booking.trip_booked.trip_name }}</td>
+      <td>{{ booking.comment }}</td>
+      <td>{{ booking.seats_required }}</td>
+      <td>
+        <a href="{% url 'editbooking' booking.id %}">
+          <button class="booking-button">Edit</button>
+        </a>
+      </td>
+      <td>
+        <a href="{% url 'deletebooking' booking.id %}">
+          <button class="booking-button">Delete</button>
+        </a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 {% endblock %}

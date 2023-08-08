@@ -1,54 +1,55 @@
 {% extends "base.html" %} {% block content %}
 
 <div class="container">
-    <h1>Manchester United Supporters Away Travel Company</h1>
-    <h2>Domestic and European Away Travel</h2>
+  <h1>Manchester United Supporters Away Travel Company</h1>
+  <h2>Domestic and European Away Travel</h2>
 </div>
 
 <div id="hero-outer">
-    <div id="hero-image"></div>
+  <div id="hero-image"></div>
 </div>
 
 <section>
-    <div>
-        <h3>Welcome to the Manchester United Supporters Away Travel</h3>
-        <p>We offer a first class travel service on our fleet of travel coaches. If you want to travel in style to
-            follow
-            and support United, this is the way to travel! </p>
-    </div>
-    <div><a href="{% url 'account_signup' %}"> 
-        <button class="button">Register Now !</button>
+  <div>
+    <h3>Welcome to the Manchester United Supporters Away Travel</h3>
+    <p>
+      We offer a first class travel service on our fleet of travel coaches. If
+      you want to travel in style to follow and support United, this is the way
+      to travel!
+    </p>
+  </div>
+  <div>
+    <a href="{% url 'account_signup' %}">
+      <button class="button">Register Now !</button>
     </a>
-</div>
-    <img src="../../media/images/bus.jpg">
+  </div>
+  <img src="../../media/images/bus.jpg" />
 </section>
 
 <h3>Upcoming Trips</h3>
 <table class="center-table">
-    <thread>
-        <tr>
-            <th>Trip ID</th>
-            <th>Trip Name</th>
-            <th>Seats</th>
-            <th>Remaining Seats</th>
-            <th>Price (£)</th>
-        </tr>
+  <thread>
+    <tr>
+      <th>Trip ID</th>
+      <th>Trip Name</th>
+      <th>Seats</th>
+      <th>Remaining Seats</th>
+      <th>Price (£)</th>
+    </tr>
 
-        <tr></tr>
-    </thread>
-    <tbody>
-        {% for trip in trip_list %}
-        <tr>
-            <td>{{ trip.trip_id}}</td>
-            <td>{{ trip.trip_name}}</td>
-            <td>{{ trip.seats}}</td>
-            <td>{{ trip.remaining_seats}}</td>
-            <td>£ {{ trip.price}} per seat</td>
-        </tr>
-        {% endfor %}
-    </tbody>
+    <tr></tr>
+  </thread>
+  <tbody>
+    {% for trip in trip_list %}
+    <tr>
+      <td>{{ trip.trip_id}}</td>
+      <td>{{ trip.trip_name}}</td>
+      <td>{{ trip.seats}}</td>
+      <td>{{ trip.remaining_seats}}</td>
+      <td>£ {{ trip.price}} per seat</td>
+    </tr>
+    {% endfor %}
+  </tbody>
 </table>
 
-
-</div>
 {% endblock %}
