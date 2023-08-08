@@ -1,10 +1,11 @@
 <!-- This is where a user can make a new booking -->
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {% block content %} {% load crispy_forms_tags %}
 
 <h1>Edit a booking</h1>
+
 {% if user.is_authenticated %}
 <form method="POST">
-  {{ form }} {% csrf_token %}
+  {{ form | crispy }} {% csrf_token %}
   <input type="submit" value="Submit" />
   {% endif %}
 </form>
