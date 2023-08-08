@@ -36,101 +36,62 @@
 
 ## User Experience (UX)
 
-
+-
 
 ### User Stories
 
-
+-
 
 ## Design
 
-
-
 ### Colour Scheme
-
 
 ### Typography
 
-
-
 ### Imagery
-
-
 
 ### Wireframes
 
-
-
 ## Features
-
-
 
 ### General features on each page
 
-
-
 ### Future Implementations
-
-
 
 ### Accessibility
 
-
-
 ## Technologies Used
-
-
 
 ### Languages Used
 
-
-
 ### Frameworks, Libraries & Programs Used
-
-
 
 ## Deployment & Local Development
 
-
-
 ### Deployment
-
-
 
 ### Local Development
 
-
-
 #### How to Fork
-
-
 
 #### How to Clone
 
-
-
 ## Testing
-
-
 
 ## Credits
 
-
-
-
-
 ### Code Used
-
-
 
 ### Content
 
-
-
 ###  Media
 
+- All images were taken from Unsplash
+- All images were compressed using Optimizilla to aid website performance.
+- Screenshots taken from the following website for this README
+- Lighthouse
+- Jigsaw validator
+- W3C validator
+- Am I Responsive?
 
-  
 ###  Acknowledgments
-
-
