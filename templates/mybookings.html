@@ -20,7 +20,7 @@
     <tbody>
       {% for booking in user.booking_set.all %}
       <tr>
-        <td>{{ booking.trip_booked }}</td>
+        <td>{{ booking.trip_booked.trip_name }}</td>
         <td>{{ booking.comment }}</td>
         <td>{{ booking.seats_required }}</td>
         <td>
