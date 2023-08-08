@@ -17,6 +17,20 @@ main {
     margin-bottom: 25px;
 }
 
+.button {
+    background-color: #ea4040;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #c63737;
+}
+
 /* Style for Hero Image */
 
 #hero-image {
@@ -43,6 +57,7 @@ section {
 }
 
 section img {
+    margin-top: 20px;
     max-width: 100%;
     max-height: 400px;
 }
