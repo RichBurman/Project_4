@@ -145,10 +145,11 @@ Booking success is only visiable to a user, once they have created a booking. Ed
     - Trip Date
     - Comments - Any comments the user made when they made their booking.
     - Seats Required - how many seats the user booked.
+    - Total Cost - How much the total booking costs. It is the sum of the trip cost x seats required.
     - Edit Button - this allows the user to enter the booking and edit the booking. (Directs them to the editbooking page)
     - Delete Button - this allows the user to delete the booking.
 
-- New Booking
+* New Booking
 
   - This page contains a form which allows the user to make a new booking. It contains fields for the following:
     - Date of Booking - This is set as a default of today's date, but can be edited by the user.
@@ -156,7 +157,7 @@ Booking success is only visiable to a user, once they have created a booking. Ed
     - Numbers of Seats Required - This allows the user to input how many seats they would like to book.
     - Additonal Comments - This field allows the user to input any comments about the booking that they want to make when they make their booking.
 
-- Edit Booking
+* Edit Booking
 
   - - This page contains a form which allows the user to edit an existing booking. It contains fields for the following:
   - Date of Booking - This is set as a default of today's date, but can be edited by the user.
@@ -164,17 +165,46 @@ Booking success is only visiable to a user, once they have created a booking. Ed
   - Numbers of Seats Required - This allows the user to input how many seats they would like to book.
   - Additonal Comments - This field allows the user to input any comments about the booking that they want to make when they make their booking.
 
-- It allows the user to edit a existing booking and will update the database accordingly.
+* It allows the user to edit a existing booking and will update the database accordingly.
 
-- Booking Success
+* Booking Success
   - The page contains a booking confirmation summary. It display the following to the user:
     - The name of the trip booked.
     - Number of Seats booked.
     - The total cost of the booking.
 
-### General features on each page
+
 
 ### Future Implementations
+
+- Create a About Us Page - to provide visitors and users of the site more information about the Manchester United Travel Company
+- Create a system where the User can pay for bookings online. At the moment the user merely makes the booking online and this is assigned to them. I would like to create a payment system where the user can pay for the booking and then this will provide them with a booking reference they can provide to the coach driver on the day to gain access to the coach. 
+- A gallery page where the visitors/users can view images of previous trips to improve the user experience. 
+- A Booking Trip page, where the user can view multiple upcoming bookings and this will also display which trips are sold out, close to being sold out etc. 
+
+
+## Technologies Used
+
+
+### Languages Used
+
+HTML, CSS, Javascript, Python and Django
+
+### Frameworks, Libraries & Programs Used
+
+Balsamiq - Used to create WireFrames
+
+Codeanywhere - For version control
+
+Github - To save and store the files for the website
+
+Bootstrap - The framework for the website. 
+
+Font Awesome - For the icongraphy on the website. 
+
+Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+[Am I Responsive](http://ami.responsivedesign.is/) To show the website on a range of devices. 
 
 ### Accessibility
 
