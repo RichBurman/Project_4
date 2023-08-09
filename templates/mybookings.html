@@ -1,45 +1,49 @@
 <!-- This is where a user can view, edit and delete their bookings -->
 {% extends "base.html" %} {% block content %}
 
-<div class="container text-center">
+<div class="container">
   <h2>My Bookings</h2>
 </div>
 
-<table class="center-table">
-  <thead>
-    <tr>
-      <th>Trip Booked</th>
-      <th>Date</th>
-      <th>Comments</th>
-      <th>Seats Required</th>
-      <th>Total Cost</th>
-      <th>Edit Booking</th>
-      <th>Delete Booking</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for booking in user.booking_set.all %}
-    <tr>
-      <td>{{ booking.trip_booked.trip_name }}</td>
-      <td>{{booking.date }}</td>
-      <td>{{ booking.comment }}</td>
-      <td>{{ booking.seats_required }}</td>
-      <td>£{{ booking.total_cost }}</td>
-      <td>
-        <a href="{% url 'editbooking' booking.id %}">
-          <button class="booking-button" aria-label="Edit Booking">Edit</button>
-        </a>
-      </td>
-      <td>
-        <a href="{% url 'deletebooking' booking.id %}">
-          <button class="booking-button" aria-label="Delete Booking">
-            Delete
-          </button>
-        </a>
-      </td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<div class="booking-table-container">
+  <table class="center-table">
+    <thead>
+      <tr>
+        <th>Trip Booked</th>
+        <th>Date</th>
+        <th>Comments</th>
+        <th>Seats Required</th>
+        <th>Total Cost</th>
+        <th>Edit Booking</th>
+        <th>Delete Booking</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for booking in user.booking_set.all %}
+      <tr>
+        <td>{{ booking.trip_booked.trip_name }}</td>
+        <td>{{booking.date }}</td>
+        <td>{{ booking.comment }}</td>
+        <td>{{ booking.seats_required }}</td>
+        <td>£{{ booking.total_cost }}</td>
+        <td>
+          <a href="{% url 'editbooking' booking.id %}">
+            <button class="booking-button" aria-label="Edit Booking">
+              Edit
+            </button>
+          </a>
+        </td>
+        <td>
+          <a href="{% url 'deletebooking' booking.id %}">
+            <button class="booking-button" aria-label="Delete Booking">
+              Delete
+            </button>
+          </a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 
 {% endblock %}

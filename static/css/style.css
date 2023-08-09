@@ -48,12 +48,17 @@ main {
 .navbar-nav .welcome-item {
     color: white;
     font-size: 18px;
-    margin-left: auto;
     padding-right: 20px;
     align-items: center;
 }
 
 .navbar-nav {
+    align-items: center;
+}
+
+.navbar-toggler-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -118,6 +123,11 @@ section img {
 
 
 /* Style tables */
+
+.booking-table-container {
+    display: flex;
+    justify-content: center;
+}
 
 .center-table {
     width: 100%;

@@ -18,12 +18,14 @@
     - [Imagery](#imagery)
     - [Wireframes](#wireframes)
   - [Features](#features)
-    - [General features on each page](#general-features-on-each-page)
     - [Future Implementations](#future-implementations)
-    - [Accessibility](#accessibility)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
+    - [Accessibility](#accessibility)
+  - [Technologies Used](#technologies-used-1)
+    - [Languages Used](#languages-used-1)
+    - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used-1)
   - [Deployment \& Local Development](#deployment--local-development)
     - [Deployment](#deployment)
     - [Local Development](#local-development)
@@ -173,18 +175,14 @@ Booking success is only visiable to a user, once they have created a booking. Ed
     - Number of Seats booked.
     - The total cost of the booking.
 
-
-
 ### Future Implementations
 
 - Create a About Us Page - to provide visitors and users of the site more information about the Manchester United Travel Company
-- Create a system where the User can pay for bookings online. At the moment the user merely makes the booking online and this is assigned to them. I would like to create a payment system where the user can pay for the booking and then this will provide them with a booking reference they can provide to the coach driver on the day to gain access to the coach. 
-- A gallery page where the visitors/users can view images of previous trips to improve the user experience. 
-- A Booking Trip page, where the user can view multiple upcoming bookings and this will also display which trips are sold out, close to being sold out etc. 
-
+- Create a system where the User can pay for bookings online. At the moment the user merely makes the booking online and this is assigned to them. I would like to create a payment system where the user can pay for the booking and then this will provide them with a booking reference they can provide to the coach driver on the day to gain access to the coach.
+- A gallery page where the visitors/users can view images of previous trips to improve the user experience.
+- A Booking Trip page, where the user can view multiple upcoming bookings and this will also display which trips are sold out, close to being sold out etc.
 
 ## Technologies Used
-
 
 ### Languages Used
 
@@ -198,13 +196,13 @@ Codeanywhere - For version control
 
 Github - To save and store the files for the website
 
-Bootstrap - The framework for the website. 
+Bootstrap - The framework for the website.
 
-Font Awesome - For the icongraphy on the website. 
+Font Awesome - For the icongraphy on the website.
 
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
 
-[Am I Responsive](http://ami.responsivedesign.is/) To show the website on a range of devices. 
+[Am I Responsive](http://ami.responsivedesign.is/) To show the website on a range of devices.
 
 ### Accessibility
 
