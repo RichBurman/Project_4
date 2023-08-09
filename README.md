@@ -138,7 +138,39 @@ Booking success is only visiable to a user, once they have created a booking. Ed
     - Remaining Seats - Informs the user how many seats are available to book. This is a live number as once a user books a number of seats, it is subtracted from this number.
     - Price - the price of booking a seat on this trip.
 
--
+- My Bookings
+
+  - This page displays to the user their bookings. It shows booking that are assigned to them.
+    - Trip Booked
+    - Trip Date
+    - Comments - Any comments the user made when they made their booking.
+    - Seats Required - how many seats the user booked.
+    - Edit Button - this allows the user to enter the booking and edit the booking. (Directs them to the editbooking page)
+    - Delete Button - this allows the user to delete the booking.
+
+- New Booking
+
+  - This page contains a form which allows the user to make a new booking. It contains fields for the following:
+    - Date of Booking - This is set as a default of today's date, but can be edited by the user.
+    - Selected Trip - This is a dropdown list, which allows the user to select from the Trips that are available to book.
+    - Numbers of Seats Required - This allows the user to input how many seats they would like to book.
+    - Additonal Comments - This field allows the user to input any comments about the booking that they want to make when they make their booking.
+
+- Edit Booking
+
+  - - This page contains a form which allows the user to edit an existing booking. It contains fields for the following:
+  - Date of Booking - This is set as a default of today's date, but can be edited by the user.
+  - Selected Trip - This is a dropdown list, which allows the user to select from the Trips that are available to book.
+  - Numbers of Seats Required - This allows the user to input how many seats they would like to book.
+  - Additonal Comments - This field allows the user to input any comments about the booking that they want to make when they make their booking.
+
+- It allows the user to edit a existing booking and will update the database accordingly.
+
+- Booking Success
+  - The page contains a booking confirmation summary. It display the following to the user:
+    - The name of the trip booked.
+    - Number of Seats booked.
+    - The total cost of the booking.
 
 ### General features on each page
 
