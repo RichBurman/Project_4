@@ -41,16 +41,16 @@
                     <li class="navbar-brand">Welcome {{ user.username }}</li>
 
                     <li class="nav-brand">
-                        <a class="navbar-brand" href="{% url 'home' %}">Home</a>
+                        <a class="navbar-brand" href="{% url 'home' %}" aria-label="Go to Home">Home</a>
                     </li>
                     <li class="navbar-brand">
-                        <a href="{% url 'account_logout' %}">Logout</a>
+                        <a href="{% url 'account_logout' %}" aria-label="Logout">Logout</a>
                     </li>
                     <li class="navbar-brand">
-                        <a href="{% url 'mybookings' %}">My Bookings</a>
+                        <a href="{% url 'mybookings' %}" aria-label="Go to My Bookings">My Bookings</a>
                     </li>
                     <li class="navbar-brand">
-                        <a href="{% url 'addnewbooking' %}">New Booking</a>
+                        <a href="{% url 'addnewbooking' %}" aria-label="Create a new Booking">New Booking</a>
                     </li>
 
                     {% if user.is_staff %}
