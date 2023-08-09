@@ -67,7 +67,8 @@ main {
 #hero-image {
     height: 600px;
     width: 100%;
-    background: url(/media/images/hero_image.jpg) no-repeat center center;
+    background: url("https://res.cloudinary.com/dbagkfamv/image/upload/v1691609211/static/images/hero_image.47b620584fa1.jpg") no-repeat center center;
+    background-size: cover;
     background-size: cover;
     margin-bottom: 20px;
 
