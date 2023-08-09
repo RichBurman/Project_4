@@ -26,6 +26,7 @@ class Booking(models.Model):
     comment = models.TextField(blank=True)
     trip_booked = models.ForeignKey(Trip, on_delete=models.CASCADE)
     seats_required = models.IntegerField()
+    total_cost = models.IntegerField(default=0)
 
     def __str__(self):
         return f"User: {self.user} booked {self.trip_booked} on {self.created_on}"

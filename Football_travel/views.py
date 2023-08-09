@@ -16,12 +16,18 @@ class TripList(generic.ListView):
 
 
 class BookingList(generic.ListView):
-    template_name = 'mybookings.html'
     model = Booking
+    template_name = 'mybookings.html'
+    context_object_name = 'bookings'
 
-    def get_user_bookings(self):
-        context = super().get_user_bookings()
-        context['Booking'] = self.request.user.booking_set.all()
+    def get_queryset(self):
+        return Booking.objects.filter(user=self.request.user)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        bookings = context['bookings']
+        for booking in bookings:
+            booking.total_cost = booking.trip_booked.price * booking.seats_required
         return context
 
 
@@ -42,6 +48,7 @@ def newbooking(request):
                 messages.error(
                     request, f"Sorry, there are only {remaining_seats} seats available. You are unable to book {booking.seats_required} seats.")
             else:
+                booking.total_cost = total_cost
                 booking.save()
 
                 trip.remaining_seats -= booking.seats_required
@@ -78,6 +85,7 @@ def editbooking(request, booking_id):
                 messages.error(
                     request, f"Sorry, there are only {remaining_seats} seats available. You are unable to book  {updated_booking.seats_required} seats.")
             else:
+                updated_booking.total_cost = trip.price * updated_booking.seats_required
                 updated_booking.save()
                 trip.remaining_seats += original_seats_required - updated_booking.seats_required
                 trip.save()
