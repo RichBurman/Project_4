@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
 <div class="container">
   <h1>Manchester United Supporters Away Travel Company</h1>
@@ -28,7 +28,7 @@
       <button class="button">Register Now !</button>
     </a>
   </div>
-  <img src="../../media/images/bus.jpg" alt="Image of a bus" />
+  <img src="{% static 'images/bus.jpg' %}" alt="Image of a bus" />
 </section>
 
 <h3>Upcoming Trips</h3>

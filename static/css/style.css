@@ -67,7 +67,7 @@ main {
 #hero-image {
     height: 600px;
     width: 100%;
-    background: url(../../media/images/hero_image.jpg) no-repeat center center;
+    background: url(/media/images/hero_image.jpg) no-repeat center center;
     background-size: cover;
     margin-bottom: 20px;
 
