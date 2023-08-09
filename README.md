@@ -23,9 +23,6 @@
     - [Languages Used](#languages-used)
     - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
     - [Accessibility](#accessibility)
-  - [Technologies Used](#technologies-used-1)
-    - [Languages Used](#languages-used-1)
-    - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used-1)
   - [Deployment \& Local Development](#deployment--local-development)
     - [Deployment](#deployment)
     - [Local Development](#local-development)
@@ -206,11 +203,11 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 ### Accessibility
 
-## Technologies Used
-
-### Languages Used
-
-### Frameworks, Libraries & Programs Used
+- I have been mindful during the coding to ensure that the website is as accessible friendly as possible. I hav eachieved this by:
+  - Using semantic HTML.
+  - Using descriptive alt attributes on images on the site.
+  - Ensuring that there is a sufficient colour contrast throughout the site.
+  - Ensuring menus are accessible by marking the current page as active for screen readers.
 
 ## Deployment & Local Development
 
