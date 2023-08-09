@@ -104,6 +104,12 @@ def editbooking(request, booking_id):
 @login_required
 def deletebooking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
+
+    if booking.user != request.user:
+        messages.error(
+            request, "You are not authorized to delete this booking.")
+        return redirect('mybookings')
+
     trip = booking.trip_booked
     trip.remaining_seats += booking.seats_required
     trip.save()
