@@ -30,7 +30,9 @@ TEMPLATES_DIRS = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = [
     '8000-richburman-project-4-8vlhhdldna.us2.codeanyapp.com', "rbproject-4.herokuapp.com", "rbproject-4-c2dc0a612356.herokuapp.com"]
