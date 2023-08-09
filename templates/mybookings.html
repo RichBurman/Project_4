@@ -27,12 +27,14 @@
       <td>£{{ booking.total_cost }}</td>
       <td>
         <a href="{% url 'editbooking' booking.id %}">
-          <button class="booking-button">Edit</button>
+          <button class="booking-button" aria-label="Edit Booking">Edit</button>
         </a>
       </td>
       <td>
         <a href="{% url 'deletebooking' booking.id %}">
-          <button class="booking-button">Delete</button>
+          <button class="booking-button" aria-label="Delete Booking">
+            Delete
+          </button>
         </a>
       </td>
     </tr>
