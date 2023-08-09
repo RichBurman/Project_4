@@ -129,14 +129,14 @@ section img {
     justify-content: center;
 }
 
-.center-table {
+/* .center-table {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
     border-collapse: collapse;
     text-align: center;
     margin-top: 20px;
-}
+} */
 
 table {
     border-collapse: collapse;

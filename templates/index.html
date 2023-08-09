@@ -32,31 +32,33 @@
 </section>
 
 <h3>Upcoming Trips</h3>
-<table class="center-table">
-  <thread>
-    <tr>
-      <th>Trip ID</th>
-      <th>Date</th>
-      <th>Trip Name</th>
-      <th>Seats</th>
-      <th>Remaining Seats</th>
-      <th>Price (£)</th>
-    </tr>
+<div class="table-responsive">
+  <table class="center-table">
+    <thread>
+      <tr>
+        <th>Trip ID</th>
+        <th>Date</th>
+        <th>Trip Name</th>
+        <th>Seats</th>
+        <th>Remaining Seats</th>
+        <th>Price (£)</th>
+      </tr>
 
-    <tr></tr>
-  </thread>
-  <tbody>
-    {% for trip in trip_list %}
-    <tr>
-      <td>{{ trip.trip_id}}</td>
-      <td>{{ trip.date }}</td>
-      <td>{{ trip.trip_name}}</td>
-      <td>{{ trip.seats}}</td>
-      <td>{{ trip.remaining_seats}}</td>
-      <td>£ {{ trip.price}} per seat</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+      <tr></tr>
+    </thread>
+    <tbody>
+      {% for trip in trip_list %}
+      <tr>
+        <td>{{ trip.trip_id}}</td>
+        <td>{{ trip.date }}</td>
+        <td>{{ trip.trip_name}}</td>
+        <td>{{ trip.seats}}</td>
+        <td>{{ trip.remaining_seats}}</td>
+        <td>£ {{ trip.price}} per seat</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 
 {% endblock %}
