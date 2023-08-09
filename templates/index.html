@@ -17,6 +17,10 @@
       you want to travel in style to follow and support United, this is the way
       to travel!
     </p>
+    <p>
+      All Trips leave from Manchester Piccadilly Train Station at 9:00am on the
+      date of the trip
+    </p>
   </div>
   <div>
     <a href="{% url 'account_signup' %}">
@@ -31,6 +35,7 @@
   <thread>
     <tr>
       <th>Trip ID</th>
+      <th>Date</th>
       <th>Trip Name</th>
       <th>Seats</th>
       <th>Remaining Seats</th>
@@ -43,6 +48,7 @@
     {% for trip in trip_list %}
     <tr>
       <td>{{ trip.trip_id}}</td>
+      <td>{{ trip.date }}</td>
       <td>{{ trip.trip_name}}</td>
       <td>{{ trip.seats}}</td>
       <td>{{ trip.remaining_seats}}</td>

@@ -9,6 +9,7 @@
   <thead>
     <tr>
       <th>Trip Booked</th>
+      <th>Date</th>
       <th>Comments</th>
       <th>Seats Required</th>
       <th>Edit Booking</th>
@@ -19,6 +20,7 @@
     {% for booking in user.booking_set.all %}
     <tr>
       <td>{{ booking.trip_booked.trip_name }}</td>
+      <td>{{booking.date }}</td>
       <td>{{ booking.comment }}</td>
       <td>{{ booking.seats_required }}</td>
       <td>
