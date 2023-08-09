@@ -90,11 +90,55 @@
 
 ### Typography
 
+- Default fonts were used for the following:
+  - Headings
+  - Body
+  - Messages
+
 ### Imagery
+
+- Images were used from the [Unsplash](https://unsplash.com/) website.
 
 ### Wireframes
 
+- Wireframe were created which are linked below:
+  - ![Wireframe Designs](media/images/README/Wireframe.png)
+
 ## Features
+
+The website is comprised of five pages:
+
+- Index Page (Home)
+- My Bookings
+- New Booking
+- Booking Success
+- Edit Booking
+
+Three of the pages are accessible from the navigation bar (Home, My Bookings, and New Booking, however this is dependant on whether a User has registered and is logged in, as some links are only visiable to logged in registered users)
+
+Booking success is only visiable to a user, once they have created a booking. Edit booking is only visiable to a user once they edit an existing booking.
+
+- ALl Pages on the website have:
+
+  - If user has registered and logged in:
+    - A responsive navigation bar at the top which allows the users to navigate through the site. To the left of the navigation bar is a space that when a user is registered and logged in displays Welcome 'User Name', this indicts to the user that they are logged in. To the right of this, are the links to the website pages (Home, Logout, My Bookings, New Booking). To allow a good user experience of the site, which the website is shown on smaller devices, the navigation bar changes to a burger toggler. This was implemented to give the site a clean look and to promote a good user experience, as users are used to seeing the burger icon when on smaller devices to navigate a site.
+  - If the user is not logged in:
+    - A responsive navigation bar at the top which allows the user to navigate through the site. The navigation bar has links to (Register and Login). All other links are hidden from non registered user, as the website requires you to be a registered user to make a booking. To allow a good user experience of the site, which the website is shown on smaller devices, the navigation bar changes to a burger toggler. This was implemented to give the site a clean look and to promote a good user experience, as users are used to seeing the burger icon when on smaller devices to navigate a site.
+
+- A footer which contain social media icon links to Facebook, Twitter, YouTube and Instagram. Icons were used as it keeps the footer clean and becuase they are universally recognisable.
+
+- Home Page
+
+  - A clear heading informing the user what the site is about.
+  - A basic section giving information to the user about the services offered by the website.
+  - A live Upcoming Trip list, which displays the following to the user:
+    - Trip ID - this is the ID number of the trip
+    - Trip Name - this display the name of the upcoming trip to the user, informing them of the destination of the trip
+    - Seats - Informing the user how many seats the coach has and therefore how many seats are available to book on each trip
+    - Remaining Seats - Informs the user how many seats are available to book. This is a live number as once a user books a number of seats, it is subtracted from this number.
+    - Price - the price of booking a seat on this trip.
+
+-
 
 ### General features on each page
 
