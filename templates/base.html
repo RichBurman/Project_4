@@ -38,34 +38,32 @@
 
                 <ul class="navbar-nav mr-auto">
                     {% if user.is_authenticated %}
-                    <li class="navbar-brand">Welcome {{ user.username }}</li>
+                    <li class="nav-item welcome-item">Welcome {{ user.username }}</li>
+                    
+                    <li class="nav-item {% if request.resolver_match.url_name == 'home' %}active{% endif %}">
+                        <a class="nav-link" href="{% url 'home' %}" aria-label="Go to Home">Home</a>
+                    </li>
+                    <li class="nav-item {% if request.resolver_match.url_name == 'mybookings' %}active{% endif %}">
+                        <a class="nav-link" href="{% url 'mybookings' %}" aria-label="Go to My Bookings">My Bookings</a>
+                    </li>
+                    <li class="nav-item {% if request.resolver_match.url_name == 'addnewbooking' %}active{% endif %}">
+                        <a class="nav-link" href="{% url 'addnewbooking' %}" aria-label="Create a new Booking">New Booking</a>
+                    </li>
 
-                    <li class="nav-brand">
-                        <a class="navbar-brand" href="{% url 'home' %}" aria-label="Go to Home">Home</a>
-                    </li>
-                    <li class="navbar-brand">
-                        <a href="{% url 'account_logout' %}" aria-label="Logout">Logout</a>
-                    </li>
-                    <li class="navbar-brand">
-                        <a href="{% url 'mybookings' %}" aria-label="Go to My Bookings">My Bookings</a>
-                    </li>
-                    <li class="navbar-brand">
-                        <a href="{% url 'addnewbooking' %}" aria-label="Create a new Booking">New Booking</a>
-                    </li>
 
                     {% if user.is_staff %}
-                    <li class="navbar-brand">
-                        <a href="{% url 'admin:index' %}">Admin</a>
+                    <li class="nav-item {% if request.resolver_match.url_name == 'admin/' %}active{% endif %}">
+                        <a class="nav-link" href="{% url 'admin:index' %}">Admin</a>
                     </li>
                     {% endif %} {% else %}
-                    <li class="nav-brand">
-                        <a class="navbar-brand" href="{% url 'home' %}">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
                     </li>
-                    <li class="navbar-brand">
-                        <a href="{% url 'account_signup' %}">Register</a>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
                     </li>
-                    <li class="navbar-brand">
-                        <a href="{% url 'account_login' %}">Login</a>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
                 </ul>
