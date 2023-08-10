@@ -364,6 +364,30 @@ To fork the repository:
 
 - Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along.
 
+### Fully Testing
+
+To fully test the website I performed the following tests using a number of different browsers, as well as testing on a MacBook Pro 16" and a iPhone 13 Pro Max. 
+
+I also went through each page using google chrome developer tools to ensure that they responsive on all different screen sizes.
+
+Links.
+
+1. All navigation links on the index page works as expected, opening in the same window. The footer links work as expected, but open in a seperate window. 
+2. All navigation links on the My Bookings page works as expected, opening in the same window. The footer links work as expected, but open in a seperate window. All links to edit and delete bookings work as expected. 
+3. All navigation links on the New Booking page works as expected, opening in the same window. The footer links work as expected, but open in a seperate window. All links to submit a booking work as expected. 
+4. The register and login links work on the index page when a user is not logged in. 
+
+Registering as a user
+
+1. When a user looks to register an account, they have to enter a username and password as minimum to be able to register an account. The password has to meet certain requirements to be accepted. 
+
+![Username and password](media/images/README/user_password.png)
+![Password](media/images/README/password.png)
+
+
+
+
+
 
 
 ### W3C Validator
