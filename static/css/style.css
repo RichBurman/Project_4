@@ -40,7 +40,10 @@ main {
     border-radius: 5px;
     cursor: pointer;
     margin: 10px;
+}
 
+.btn btn-primary {
+    background-color: #ea4040;
 }
 
 /* style for navbar */
