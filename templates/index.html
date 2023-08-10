@@ -25,10 +25,10 @@
   </div>
   <div>
     <a href="{% url 'account_signup' %}">
-      <button class="button">Register Now !</button>
+    <button class="button">Register Now !</button>
     </a>
   </div>
-  <img src="{% static 'images/bus.jpg' %}" alt="Image of a bus" />
+  <img src="{% static 'images/bus.jpg' %}" alt="Image of a bus"/>
 </section>
 
 <h3>Upcoming Trips</h3>
@@ -43,8 +43,6 @@
         <th>Remaining Seats</th>
         <th>Price (£)</th>
       </tr>
-
-      <tr></tr>
     </thread>
     <tbody>
       {% for trip in trip_list %}

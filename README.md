@@ -251,7 +251,7 @@ To fork the repository:
 
 ### W3C Validator
 
-All codes for Project and App were tested using the [CI Python Linter](https://pep8ci.herokuapp.com/)
+All codes for Project and App were tested using the [CI Python Linter](https://pep8ci.herokuapp.com/) and are valid.
 
 Project_4
 
@@ -265,6 +265,20 @@ football_travel
 - [models.py](media/images/README/models_view_valid.png)
 - [urls.py](media/images/README/urls_views_valid.png)
 - [views.py](media/images/README/views_views_valid.png)
+
+All CSS returned as valid.
+
+- [CSS](media/images/README/css_valid.png)
+
+All HTML returned as valid.
+
+- [base.html]()
+- [booking_success.html]()
+- [editbooking.html]()
+- [index.html]()
+- [mybookings.html]()
+- [newbooking.html]()
+
 
 ### Solved Bugs
 
