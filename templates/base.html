@@ -38,7 +38,10 @@
                 <ul class="navbar-nav mr-auto">
                     {% if user.is_authenticated %}
                     <li class="nav-item welcome-item">Welcome {{ user.username }}</li>
-                    
+
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                    </li>
                     <li class="nav-item {% if request.resolver_match.url_name == 'home' %}active{% endif %}">
                         <a class="nav-link" href="{% url 'home' %}" aria-label="Go to Home">Home</a>
                     </li>
@@ -48,7 +51,6 @@
                     <li class="nav-item {% if request.resolver_match.url_name == 'addnewbooking' %}active{% endif %}">
                         <a class="nav-link" href="{% url 'addnewbooking' %}" aria-label="Create a new Booking">New Booking</a>
                     </li>
-
 
                     {% if user.is_staff %}
                     <li class="nav-item {% if request.resolver_match.url_name == 'admin/' %}active{% endif %}">
