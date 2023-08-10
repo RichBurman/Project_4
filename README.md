@@ -455,7 +455,11 @@ The lighthouse score on My Bookings Page is showing a performance score of 99, h
 
 ### Code Used
 
+[Kera Cudmore README Template and Deployment Code](https://github.com/kera-cudmore/Bully-Book-Club/blob/main/README.md)
+
 ### Content
+
+Content for the website was written by Richard Burman
 
 ### Media
 
@@ -468,3 +472,6 @@ The lighthouse score on My Bookings Page is showing a performance score of 99, h
 - Am I Responsive?
 
 ### Acknowledgments
+
+My Code Institute Mentor
+My Code Institute Colleagues in Slack
