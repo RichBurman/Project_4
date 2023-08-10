@@ -6,7 +6,7 @@
 {% if user.is_authenticated %}
 <form method="POST">
   {{ form | crispy }} {% csrf_token %}
-  <input type="submit" value="Submit" />
+  <input type="submit" value="Submit">
   {% endif %}
 </form>
 {% endblock %}
