@@ -71,21 +71,21 @@
 
 ![User Stories](media/images/README/userstories.png)
 
-The user stories were split into User and Admin. 
+The user stories were split into User and Admin.
 
 User
-  - As a Site User I can register an account so that I create and edit my trip bookings
-  - As a Site User I can view a list of trips so that I can select one/many to book
-  - As a Site User I can click on a trip so that I can find out full information about the trip and decide if I want to book
+
+- As a Site User I can register an account so that I create and edit my trip bookings
+- As a Site User I can view a list of trips so that I can select one/many to book
+- As a Site User I can click on a trip so that I can find out full information about the trip and decide if I want to book
 - As a Site User I can create, read, update and delete bookings so that I can manage my trip bookings
 - As a User I can **make a booking and have the cost displayed** so that I see how much the trip will cost based on how many seats I have booked
-  
 
 Admin
 
     - As a Admin I can create Trips so that Users can book onto the trips
     - As a Admin I can create, read, update and delete any bookings so that I can manage the booking system
-  
+
 #### Client Goals
 
 - To be able to view the site on a range of device sizes.
@@ -164,6 +164,36 @@ Booking success is only visiable to a user, once they have created a booking. Ed
 - Price - the price of booking a seat on this trip.
 
 ![Upcoming Trips](media/images/README/upcomingtrips.png)
+
+- Navigation Bar
+  - The navigation bar allows users and visitors to navigate around the site.
+Visitors
+
+![Visitors Nav](media/images/README/nav_visit.png)
+
+- Home - to take the user to the Home Page
+- Register - to take the user to the register/sign up page
+- Login - to take the user to the login page
+Registered logged in User
+
+![Logged in Users Nav](media/images/README/nav_user.png)
+
+- Welcome Username - Displays a welcome message and the user's username
+- Logout - allows the user to logout of the website
+- Home - take user to the Home Page
+- My Bookings - take the user to My Bookings to view their bookings
+- New Booking - take the user to the new booking page to create a new booking
+
+Admin logged in User
+
+![Logged in Admin Nav](media/images/README/nav_admin.png)
+
+- Welcome admin - Displays a welcome message and the admin name
+- Logout - allows the user to logout of the website
+- Home - take user to the Home Page
+- My Bookings - take the user to My Bookings to view their bookings
+- New Booking - take the user to the new booking page to create a new booking
+- Admin - allows the admin to enter the [Admin Page](https://rbproject-4-c2dc0a612356.herokuapp.com/admin/)
 
 - My Bookings
 
