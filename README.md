@@ -1,10 +1,12 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# PROJECT NAME TO GO HERE
+# Manchester United Supporters Away Travel Company
+
+![Am I Responsive Image](media/images/README/am_i_responsive2.png)
 
 ## CONTENTS
 
-- [PROJECT NAME TO GO HERE](#project-name-to-go-here)
+- [Manchester United Supporters Away Travel Company](#manchester-united-supporters-away-travel-company)
   - [CONTENTS](#contents)
   - [User Experience (UX)](#user-experience-ux)
     - [Key Information for the site](#key-information-for-the-site)
@@ -213,11 +215,35 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 ### Deployment
 
+Heroku was used to deploy the live website. The instruction to achieve this are below:
+
+1. Log in to Heroku.
+2. Find the app from this project and open - rbproject-4.
+3. Click on deploy.
+4. Find 'App connected to Github' and link to Github account.
+5. Search for repository and link - RichBurman/Project_4.
+6. Find Manual Deploy and click Deploy Branch.
+7. Click on Open App at the top right of the screen to view the live site.
+
+[Live site link ](https://rbproject-4-c2dc0a612356.herokuapp.com/)
+
 ### Local Development
 
 #### How to Fork
 
+To fork the repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, RichBurman/Project_4
+3. Click the Fork button in the top right corner.
+
 #### How to Clone
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, RichBurman/Project_4
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
 ## Testing
 
