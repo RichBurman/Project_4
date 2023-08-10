@@ -251,6 +251,21 @@ To fork the repository:
 
 ### W3C Validator
 
+All codes for Project and App were tested using the [CI Python Linter](https://pep8ci.herokuapp.com/)
+
+Project_4
+
+- [urls.py](media/images/README/projecturls_valid.png)
+- [settings.py](media/images/README/settings_valid.png)
+
+football_travel
+
+- [admin.py](media/images/README/admin_view_valid.png)
+- [forms.py](media/images/README/forms_view_valid.png)
+- [models.py](media/images/README/models_view_valid.png)
+- [urls.py](media/images/README/urls_views_valid.png)
+- [views.py](media/images/README/views_views_valid.png)
+
 ### Solved Bugs
 
 ### Known Bugs
