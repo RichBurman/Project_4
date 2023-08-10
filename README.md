@@ -272,12 +272,7 @@ All CSS returned as valid.
 
 All HTML returned as valid.
 
-- [base.html]()
-- [booking_success.html]()
-- [editbooking.html]()
-- [index.html]()
-- [mybookings.html]()
-- [newbooking.html]()
+-  [Index Page](media/images/README/index_html_valid.png)
 
 
 ### Solved Bugs
