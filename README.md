@@ -23,29 +23,33 @@
     - [Future Implementations](#future-implementations)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
-    - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
+    - [Frameworks](#frameworks)
+    - [Libraries \& Programs Used](#libraries--programs-used)
     - [Accessibility](#accessibility)
   - [Deployment \& Local Development](#deployment--local-development)
     - [Deployment](#deployment)
+      - [**Create the Live Database**](#create-the-live-database)
+      - [**Heroku app setup**](#heroku-app-setup)
+      - [**Preparation for deployment in Codeanywhere**](#preparation-for-deployment-in-codeanywhere)
     - [Local Development](#local-development)
       - [How to Fork](#how-to-fork)
       - [How to Clone](#how-to-clone)
   - [Testing](#testing)
+    - [Fully Testing](#fully-testing)
     - [W3C Validator](#w3c-validator)
     - [Solved Bugs](#solved-bugs)
     - [Known Bugs](#known-bugs)
     - [Lighthouse](#lighthouse)
       - [Index Page](#index-page)
-      - [Base HTML](#base-html)
-      - [New Booking](#new-booking)
-      - [Edit Booking](#edit-booking)
-      - [Booking Success](#booking-success)
       - [My Bookings](#my-bookings)
+      - [New Bookings](#new-bookings)
+      - [Edit Bookings](#edit-bookings)
+      - [Booking Success](#booking-success)
   - [Credits](#credits)
     - [Code Used](#code-used)
     - [Content](#content)
-    - [ Media](#media)
-    - [ Acknowledgments](#acknowledgments)
+    - [Media](#media)
+    - [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -60,6 +64,7 @@
 - How to create, edit and delete a booking.
 - To be able to review what bookings you have.
 - How to become a member and sign up.
+- User can see a live upcoming trip list on the home page which is updated as users on the site make bookings.
 -
 
 ### User Stories
@@ -92,9 +97,9 @@
 ### Typography
 
 - Default fonts were used for the following:
-  - Headings
-  - Body
-  - Messages
+- Headings
+- Body
+- Messages
 
 ### Imagery
 
@@ -103,7 +108,7 @@
 ### Wireframes
 
 - Wireframe were created which are linked below:
-  - ![Wireframe Designs](media/images/README/Wireframe.png)
+- ![Wireframe Designs](media/images/README/Wireframe.png)
 
 ## Features
 
@@ -121,58 +126,76 @@ Booking success is only visiable to a user, once they have created a booking. Ed
 
 - ALl Pages on the website have:
 
-  - If user has registered and logged in:
-    - A responsive navigation bar at the top which allows the users to navigate through the site. To the left of the navigation bar is a space that when a user is registered and logged in displays Welcome 'User Name', this indicts to the user that they are logged in. To the right of this, are the links to the website pages (Home, Logout, My Bookings, New Booking). To allow a good user experience of the site, which the website is shown on smaller devices, the navigation bar changes to a burger toggler. This was implemented to give the site a clean look and to promote a good user experience, as users are used to seeing the burger icon when on smaller devices to navigate a site.
-  - If the user is not logged in:
-    - A responsive navigation bar at the top which allows the user to navigate through the site. The navigation bar has links to (Register and Login). All other links are hidden from non registered user, as the website requires you to be a registered user to make a booking. To allow a good user experience of the site, which the website is shown on smaller devices, the navigation bar changes to a burger toggler. This was implemented to give the site a clean look and to promote a good user experience, as users are used to seeing the burger icon when on smaller devices to navigate a site.
+- If user has registered and logged in:
+- A responsive navigation bar at the top which allows the users to navigate through the site. To the left of the navigation bar is a space that when a user is registered and logged in displays Welcome 'User Name', this indicts to the user that they are logged in. To the right of this, are the links to the website pages (Home, Logout, My Bookings, New Booking). To allow a good user experience of the site, which the website is shown on smaller devices, the navigation bar changes to a burger toggler. This was implemented to give the site a clean look and to promote a good user experience, as users are used to seeing the burger icon when on smaller devices to navigate a site.
+- If the user is not logged in:
+- A responsive navigation bar at the top which allows the user to navigate through the site. The navigation bar has links to (Register and Login). All other links are hidden from non registered user, as the website requires you to be a registered user to make a booking. To allow a good user experience of the site, which the website is shown on smaller devices, the navigation bar changes to a burger toggler. This was implemented to give the site a clean look and to promote a good user experience, as users are used to seeing the burger icon when on smaller devices to navigate a site.
 
 - A footer which contain social media icon links to Facebook, Twitter, YouTube and Instagram. Icons were used as it keeps the footer clean and becuase they are universally recognisable.
 
 - Home Page
 
-  - A clear heading informing the user what the site is about.
-  - A basic section giving information to the user about the services offered by the website.
-  - A live Upcoming Trip list, which displays the following to the user:
-    - Trip ID - this is the ID number of the trip
-    - Trip Name - this display the name of the upcoming trip to the user, informing them of the destination of the trip
-    - Seats - Informing the user how many seats the coach has and therefore how many seats are available to book on each trip
-    - Remaining Seats - Informs the user how many seats are available to book. This is a live number as once a user books a number of seats, it is subtracted from this number.
-    - Price - the price of booking a seat on this trip.
+![Home](media/images/README/home.png)
+
+- A clear heading informing the user what the site is about.
+- A basic section giving information to the user about the services offered by the website.
+- A live Upcoming Trip list, which displays the following to the user:
+- Trip ID - this is the ID number of the trip
+- Trip Name - this display the name of the upcoming trip to the user, informing them of the destination of the trip
+- Seats - Informing the user how many seats the coach has and therefore how many seats are available to book on each trip
+- Remaining Seats - Informs the user how many seats are available to book. This is a live number as once a user books a number of seats, it is subtracted from this number.
+- Price - the price of booking a seat on this trip.
+
+![Upcoming Trips](media/images/README/upcomingtrips.png)
 
 - My Bookings
 
-  - This page displays to the user their bookings. It shows booking that are assigned to them.
-    - Trip Booked
-    - Trip Date
-    - Comments - Any comments the user made when they made their booking.
-    - Seats Required - how many seats the user booked.
-    - Total Cost - How much the total booking costs. It is the sum of the trip cost x seats required.
-    - Edit Button - this allows the user to enter the booking and edit the booking. (Directs them to the editbooking page)
-    - Delete Button - this allows the user to delete the booking.
+![My Bookings](media/images/README/mybookings.png)
+
+- This page displays to the user their bookings. It shows booking that are assigned to them.
+- Trip Booked
+- Trip Date
+- Comments - Any comments the user made when they made their booking.
+- Seats Required - how many seats the user booked.
+- Total Cost - How much the total booking costs. It is the sum of the trip cost x seats required.
+- Edit Button - this allows the user to enter the booking and edit the booking. (Directs them to the editbooking page)
+- Delete Button - this allows the user to delete the booking.
 
 * New Booking
 
-  - This page contains a form which allows the user to make a new booking. It contains fields for the following:
-    - Date of Booking - This is set as a default of today's date, but can be edited by the user.
-    - Selected Trip - This is a dropdown list, which allows the user to select from the Trips that are available to book.
-    - Numbers of Seats Required - This allows the user to input how many seats they would like to book.
-    - Additonal Comments - This field allows the user to input any comments about the booking that they want to make when they make their booking.
+![New Booking](media/images/README/newbooking.png)
 
-* Edit Booking
+- This page contains a form which allows the user to make a new booking. It contains fields for the following:
 
-  - - This page contains a form which allows the user to edit an existing booking. It contains fields for the following:
-  - Date of Booking - This is set as a default of today's date, but can be edited by the user.
-  - Selected Trip - This is a dropdown list, which allows the user to select from the Trips that are available to book.
-  - Numbers of Seats Required - This allows the user to input how many seats they would like to book.
-  - Additonal Comments - This field allows the user to input any comments about the booking that they want to make when they make their booking.
+- Date of Booking - This is set as a default of today's date, but can be edited by the user.
+- Selected Trip - This is a dropdown list, which allows the user to select from the Trips that are available to book.
+- Numbers of Seats Required - This allows the user to input how many seats they would like to book.
+- Additonal Comments - This field allows the user to input any comments about the booking that they want to make when they make their booking.
 
-* It allows the user to edit a existing booking and will update the database accordingly.
+Once a user confirms a booking it will update the live upcoming trip section on the home page
 
-* Booking Success
-  - The page contains a booking confirmation summary. It display the following to the user:
-    - The name of the trip booked.
-    - Number of Seats booked.
-    - The total cost of the booking.
+![Upcoming Trips](media/images/README/upcomingtrips.png)
+
+As well as add the booking to the user my booking section.
+
+![My Bookings](media/images/README/mybookings.png)
+
+- Edit Booking
+
+* - This page contains a form which allows the user to edit an existing booking. It contains fields for the following:
+* Date of Booking - This is set as a default of today's date, but can be edited by the user.
+* Selected Trip - This is a dropdown list, which allows the user to select from the Trips that are available to book.
+* Numbers of Seats Required - This allows the user to input how many seats they would like to book.
+* Additonal Comments - This field allows the user to input any comments about the booking that they want to make when they make their booking.
+
+- It allows the user to edit a existing booking and will update the database accordingly.
+
+- Booking Success
+
+* The page contains a booking confirmation summary. It display the following to the user:
+* The name of the trip booked.
+* Number of Seats booked.
+* The total cost of the booking.
 
 ### Future Implementations
 
@@ -187,7 +210,9 @@ Booking success is only visiable to a user, once they have created a booking. Ed
 
 HTML, CSS, Javascript, Python and Django
 
-### Frameworks, Libraries & Programs Used
+### Frameworks
+
+Django - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
 
 Balsamiq - Used to create WireFrames
 
@@ -197,19 +222,33 @@ Github - To save and store the files for the website
 
 Bootstrap - The framework for the website.
 
-Font Awesome - For the icongraphy on the website.
-
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
 
 [Am I Responsive](http://ami.responsivedesign.is/) To show the website on a range of devices.
 
+### Libraries & Programs Used
+
+Font Awesome - For the icongraphy on the website.
+
+Django Allauth
+
+Django_crispy_forms
+
+gunicorn
+
+dj_database_url
+
+psycopg2
+
+Pip - for install python packages
+
 ### Accessibility
 
 - I have been mindful during the coding to ensure that the website is as accessible friendly as possible. I hav eachieved this by:
-  - Using semantic HTML.
-  - Using descriptive alt attributes on images on the site.
-  - Ensuring that there is a sufficient colour contrast throughout the site.
-  - Ensuring menus are accessible by marking the current page as active for screen readers.
+- Using semantic HTML.
+- Using descriptive alt attributes on images on the site.
+- Ensuring that there is a sufficient colour contrast throughout the site.
+- Ensuring menus are accessible by marking the current page as active for screen readers.
 
 ## Deployment & Local Development
 
@@ -229,102 +268,102 @@ We have been using the sqlite3 database in development, however this is only ava
 
 #### **Heroku app setup**
 
-  1. From the [Heroku dashboard](https://dashboard.heroku.com/), click the new button in the top right corner and select create new app.
-  2. Give your app a name (this must be unique), select the region that is closest to you and then click the create app button bottom left.
-  3. Open the settings tab and create a new config var of `DATABASE_URL` and paste the database URL you copied from elephantSQL into the value (the value should not have quotation marks around it).
+1. From the [Heroku dashboard](https://dashboard.heroku.com/), click the new button in the top right corner and select create new app.
+2. Give your app a name (this must be unique), select the region that is closest to you and then click the create app button bottom left.
+3. Open the settings tab and create a new config var of `DATABASE_URL` and paste the database URL you copied from elephantSQL into the value (the value should not have quotation marks around it).
 
 #### **Preparation for deployment in Codeanywhere**
 
 1. Install dj_database_url and psycopg2 (they are both needed for connecting to the external database you've just set up):
 
-   ```bash
-   pip3 install dj_database_url==0.5.0 psycopg2
-   ```
+```bash
+pip3 install dj_database_url==0.5.0 psycopg2
+```
 
 2. Update your requirements.txt file with the packages just installed:
 
-    ```bash
-    pip3 freeze > requirements.txt
-    ```
+```bash
+pip3 freeze > requirements.txt
+```
 
 3. In settings.py underneath import os, add `import dj_database_url`
 
 4. Find the section for DATABASES and comment out the code. Add the following code below the commented out database block, and use the URL copied from elephantSQL for the value:
 
-    (NOTE! don't delete the original section, as this is a temporary step whilst we connect the external database. Make sure you don't push this value to GitHub - this value should not be saved to GitHub, it will be added to the Heroku config vars in a later step, this is temporary to allow us to migrate our models to the external database)
+(NOTE! don't delete the original section, as this is a temporary step whilst we connect the external database. Make sure you don't push this value to GitHub - this value should not be saved to GitHub, it will be added to the Heroku config vars in a later step, this is temporary to allow us to migrate our models to the external database)
 
-    ```python
-    DATABASES = {
-        'default': dj_database_url.parse('paste-elephantsql-db-url-here')
-    }
-    ```
+```python
+DATABASES = {
+'default': dj_database_url.parse('paste-elephantsql-db-url-here')
+}
+```
 
 5. In the terminal, run the show migrations command to confirm connection to the external database:
 
-    ```bash
-    python3 manage.py runserver
-    ```
+```bash
+python3 manage.py runserver
+```
 
 6. If you have connected the database correctly you will see a list of migrations that are unchecked. You can now run migrations to migrate the models to the new database:
 
-    ```bash
-    python3 manage.py migrate
-    ```
+```bash
+python3 manage.py migrate
+```
 
 7. Create a superuser for the new database. Input a username, email and password when directed.
 
-    ```bash
-    python3 manage.py createsuperuser
-    ```
+```bash
+python3 manage.py createsuperuser
+```
 
 8. You should now be able to go to the browser tab on the left of the page in elephantsql, click the table queries button and see the user you've just created by selecting the auth_user table.
 9. We can now add an if/else statement for the databases in settings.py, so we use the development database while in development (the code we commented out) - and the external database on the live site (note the change where the db URL was is now a variable we will use in Heroku):
 
-    ```python
-    if 'DATABASE_URL' in os.environ:
-        DATABASES = {
-          'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-        }
-    else:
-        DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
-          }
-        }
-    ```
+```python
+if 'DATABASE_URL' in os.environ:
+DATABASES = {
+'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
+else:
+DATABASES = {
+'default': {
+'ENGINE': 'django.db.backends.sqlite3',
+'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
+}
+}
+```
 
 10. Install gunicorn which will act as our webserver and freeze this to the requirements.txt file:
 
-    ```bash
-    pip3 install gunicorn
-    pip3 freeze > requirements.txt
-    ```
+```bash
+pip3 install gunicorn
+pip3 freeze > requirements.txt
+```
 
 11. Create a `Procfile` in the root directory. This tells Heroku to create a web dyno which runs gunicorn and serves our django app. Add the following to the file (making sure not to leave any blank lines underneath):
 
-    ```Procfile
-    web: gunicorn seaside_sewing.wsgi:application
-    ```
+```Procfile
+web: gunicorn seaside_sewing.wsgi:application
+```
 
 12. Log into the Heroku CLI in the terminal and then run the following command to disable collectstatic. This command tells Heroku not to collect static files when we deploy:
 
-    ```bash
-    heroku config:set DISABLE_COLLECTSTATIC=1 --app heroku-app-name-here
-    ```
+```bash
+heroku config:set DISABLE_COLLECTSTATIC=1 --app heroku-app-name-here
+```
 
 13. We will also need to add the Heroku app and localhost (which will allow GitPod to still work) to ALLOWED_HOSTS = [] in settings.py:
 
-    ```python
-    ALLOWED_HOSTS = ['{heroku deployed site URL here}', 'localhost' ]
-    ```
+```python
+ALLOWED_HOSTS = ['{heroku deployed site URL here}', 'localhost' ]
+```
 
 14. Save, add, commit and push the changes to GitHub. You can then also initialize the Heroku git remote in the terminal and push to Heroku with:
 
-    ```bash
-    heroku git:remote -a {app name here}
-    git push heroku main
-    ```
+```bash
+heroku git:remote -a {app name here}
+git push heroku main
+```
 
 15. You should now be able to see the deployed site (without any static files as we haven't set these up yet).
 
@@ -366,29 +405,58 @@ To fork the repository:
 
 ### Fully Testing
 
-To fully test the website I performed the following tests using a number of different browsers, as well as testing on a MacBook Pro 16" and a iPhone 13 Pro Max. 
+To fully test the website I performed the following tests using a number of different browsers, as well as testing on a MacBook Pro 16" and a iPhone 13 Pro Max.
 
 I also went through each page using google chrome developer tools to ensure that they responsive on all different screen sizes.
 
 Links.
 
-1. All navigation links on the index page works as expected, opening in the same window. The footer links work as expected, but open in a seperate window. 
-2. All navigation links on the My Bookings page works as expected, opening in the same window. The footer links work as expected, but open in a seperate window. All links to edit and delete bookings work as expected. 
-3. All navigation links on the New Booking page works as expected, opening in the same window. The footer links work as expected, but open in a seperate window. All links to submit a booking work as expected. 
-4. The register and login links work on the index page when a user is not logged in. 
+1. All navigation links on the index page works as expected, opening in the same window. The footer links work as expected, but open in a seperate window.
+2. All navigation links on the My Bookings page works as expected, opening in the same window. The footer links work as expected, but open in a seperate window. All links to edit and delete bookings work as expected.
+3. All navigation links on the New Booking page works as expected, opening in the same window. The footer links work as expected, but open in a seperate window. All links to submit a booking work as expected.
+4. The register and login links work on the index page when a user is not logged in.
 
 Registering as a user
 
-1. When a user looks to register an account, they have to enter a username and password as minimum to be able to register an account. The password has to meet certain requirements to be accepted. 
+1. When a user looks to register an account, they have to enter a username and password as minimum to be able to register an account. The password has to meet certain requirements to be accepted.
 
 ![Username and password](media/images/README/user_password.png)
 ![Password](media/images/README/password.png)
 
+Log in and Logout
 
+When a user has registered on the site. All login and logout works as expected, logging in or logging out in the same window.
 
+New Booking
 
+![New Booking](media/images/README/newbooking.png)
 
+When a user navigates to new booking, they come to this page.
 
+- The user can select the date
+- The user can select a trip from a dropdown menu (Must be selected to make a booking)
+  [Enter Trip](media/images/README/enter_trip.png)
+- The user has to enter numbers only in the Number of Seats Required. (Can only be numbers)
+  [Enter Numbers](media/images/README/seat_num_only.png)
+- Comments - can be left blank
+
+![Enter Seats](media/images/README/enter_seats.png)
+
+Booking Success
+
+When a user makes a new booking and it is successful, it takes them to the booking success page. This displays to the user that the booking is confirmed by displaying a popup message and also shows confirmation on the booking success page.
+
+![Booking Success](media/images/README/bookingsuccess.png)
+
+My Bookings
+
+On the My Bookings page a user can edit a booking. The user clicks on the edit button, which opens the booking and it is already pre-populated with the existing booking information. The user can edit and enter new booking information.
+
+![Edit Booking](media/images/README/editbooking.png)
+
+On the My Bookings page a user can delete a booking. I have tested to see the booking has been deleted and a message also informs the user.
+
+![Delete Booking](media/images/README/deletebooking_message.png)
 
 ### W3C Validator
 
@@ -419,20 +487,19 @@ All HTML returned as valid.
 - [My Bookings Page](media/images/README/mybookings_html_valid.png)
 - [New Booking Page](media/images/README/newbooking_html_valid.png)
 
-
 ### Solved Bugs
 
-I had a number of bugs during design of the website. 
+I had a number of bugs during design of the website.
 
-- I had an issue pulling through the total cost of a booking to display to a user on the my booking page. However, I fixed this, as I had not added total_cost to the booking model. This meant when the seats required was multipled by the price of the seat it now had a place to be stored in the database, whereas previous it did not. 
+- I had an issue pulling through the total cost of a booking to display to a user on the my booking page. However, I fixed this, as I had not added total_cost to the booking model. This meant when the seats required was multipled by the price of the seat it now had a place to be stored in the database, whereas previous it did not.
 
-- I had an issue with adding in images to the website, as I was not using the bootstrap language to correctly insert images. I researched more information on bootstrap images and this resolved the issues. 
+- I had an issue with adding in images to the website, as I was not using the bootstrap language to correctly insert images. I researched more information on bootstrap images and this resolved the issues.
 
 ### Known Bugs
 
 - Best Practise issue
 
-This is a bug I found during my lighthouse testing of my website. This is showing the following issue shown below. 
+This is a bug I found during my lighthouse testing of my website. This is showing the following issue shown below.
 
 ![Best Practise Issue](media/images/README/bpractise_issue.png)
 
@@ -440,40 +507,39 @@ This is a bug I found during my lighthouse testing of my website. This is showin
 
 #### Index Page
 
-The lighthouse score on the Index page is showing a low score of 84 on performance. 
+The lighthouse score on the Index page is showing a low score of 84 on performance.
 
 - ![Index Page](media/images/README/index_lighthouse.png)
 
-This is due to the images affecting performance. 
+This is due to the images affecting performance.
 
 - ![Index Page Lighthouse Image 2](media/images/README/index_lighthouse2.png)
 
-This is an area I will need to address to improve the website overall. 
+This is an area I will need to address to improve the website overall.
 
 #### My Bookings
 
-The lighthouse score on My Bookings Page is showing a performance score of 99, however the best practise is also showing a score of 83. 
+The lighthouse score on My Bookings Page is showing a performance score of 99, however the best practise is also showing a score of 83.
 
 - ![My Bookings Page](media/images/README/mybookings_lighthouse.png)
 
 #### New Bookings
 
-The lighthouse score on My Bookings Page is showing a performance score of 98, however the best practise is also showing a score of 83. 
+The lighthouse score on My Bookings Page is showing a performance score of 98, however the best practise is also showing a score of 83.
 
 - ![New Booking Page](media/images/README/newbooking_lighthouse.png)
 
 #### Edit Bookings
 
-The lighthouse score on My Bookings Page is showing a performance score of 98, however the best practise is also showing a score of 83. 
+The lighthouse score on My Bookings Page is showing a performance score of 98, however the best practise is also showing a score of 83.
 
 - ![Edit Booking Page](media/images/README/editbooking_lighthouse.png)
 
 #### Booking Success
 
-The lighthouse score on My Bookings Page is showing a performance score of 99, however the best practise is also showing a score of 83. 
+The lighthouse score on My Bookings Page is showing a performance score of 99, however the best practise is also showing a score of 83.
 
 - ![Booking Success Page](media/images/README/bookingsuccess_lighthouse.png)
-
 
 ## Credits
 
@@ -484,6 +550,9 @@ The lighthouse score on My Bookings Page is showing a performance score of 99, h
 ### Content
 
 Content for the website was written by Richard Burman
+Research using [w3c](https://www.w3schools.com/), [bootstrap](https://getbootstrap.com/)
+Manchester United is used in the project [Manchester United](https://www.manutd.com/en)
+All football teams used in the project are from the Premier League [Premier League](https://www.premierleague.com/)
 
 ### Media
 
