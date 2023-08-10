@@ -42,8 +42,9 @@ main {
     margin: 10px;
 }
 
-.btn btn-primary {
-    background-color: #ea4040;
+.btn-outline {
+    background-color: black;
+    color: white;
 }
 
 /* style for navbar */

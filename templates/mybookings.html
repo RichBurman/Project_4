@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {% block content %} {% block custom_styles %}
 
 <h2>My Bookings</h2>
 
@@ -24,23 +24,15 @@
         <td>{{ booking.seats_required }}</td>
         <td>£{{ booking.total_cost }}</td>
         <td>
-          <a href="{% url 'editbooking' booking.id %}">
-            <button class="booking-button" aria-label="Edit Booking">
-              Edit
-            </button>
-          </a>
+          <a href="{% url 'editbooking' booking.id %}" class="btn btn-dark btn-rounded">Edit</a>
         </td>
         <td>
-          <a href="{% url 'deletebooking' booking.id %}">
-            <button class="booking-button" aria-label="Delete Booking">
-              Delete
-            </button>
-          </a>
+          <a href="{% url 'deletebooking' booking.id %}" class="btn btn-dark btn-rounded">Delete</a>
         </td>
       </tr>
       {% endfor %}
     </tbody>
   </table>
 </div>
-
+{% endblock custom_styles %}
 {% endblock %}
