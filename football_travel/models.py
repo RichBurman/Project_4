@@ -11,9 +11,10 @@ class Trip(models.Model):
     trip_name = models.CharField(max_length=50)
     trip_id = models.AutoField(primary_key=True)
     seats = models.IntegerField(default=80)
-    remaining_seats = models.PositiveIntegerField(validators=[MaxValueValidator(80)])
-    price=models.IntegerField()
-    date=models.DateField()
+    remaining_seats = models.PositiveIntegerField(
+        validators=[MaxValueValidator(80)])
+    price = models.IntegerField()
+    date = models.DateField()
 
     def __str__(self):
         return f"Name: {self.trip_name} ID Number: {self.trip_id}"
