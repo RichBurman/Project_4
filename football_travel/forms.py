@@ -10,7 +10,6 @@ class BookingForm(forms.ModelForm):
         self.fields['trip_booked'].queryset = Trip.objects.all()
         self.fields['trip_booked'].label_from_instance = lambda obj: obj.trip_name
 
-
     class Meta:
         model = Booking
         fields = ['date', 'trip_booked',
