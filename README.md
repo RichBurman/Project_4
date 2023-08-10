@@ -233,7 +233,7 @@ We have been using the sqlite3 database in development, however this is only ava
   2. Give your app a name (this must be unique), select the region that is closest to you and then click the create app button bottom left.
   3. Open the settings tab and create a new config var of `DATABASE_URL` and paste the database URL you copied from elephantSQL into the value (the value should not have quotation marks around it).
 
-#### **Preparation for deployment in GitPod**
+#### **Preparation for deployment in Codeanywhere**
 
 1. Install dj_database_url and psycopg2 (they are both needed for connecting to the external database you've just set up):
 
@@ -323,7 +323,7 @@ We have been using the sqlite3 database in development, however this is only ava
 
     ```bash
     heroku git:remote -a {app name here}
-    git push heroku master
+    git push heroku main
     ```
 
 15. You should now be able to see the deployed site (without any static files as we haven't set these up yet).
