@@ -24,8 +24,8 @@
     </p>
   </div>
   <div>
-    <a href="{% url 'account_signup' %}">
-    <button class="button">Register Now !</button>
+    <a href="{% url 'account_signup' %}" class="button-link">
+        <button class="button">Register Now !</button>
     </a>
   </div>
   <img src="{% static 'images/bus.jpg' %}" alt="Image of a bus"/>
@@ -34,7 +34,7 @@
 <h3>Upcoming Trips</h3>
 <div class="table-responsive">
   <table class="table">
-    <thread>
+    <thead>
       <tr>
         <th>Trip ID</th>
         <th>Date</th>
@@ -43,7 +43,7 @@
         <th>Remaining Seats</th>
         <th>Price (£)</th>
       </tr>
-    </thread>
+    </thead>
     <tbody>
       {% for trip in trip_list %}
       <tr>
