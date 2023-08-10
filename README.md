@@ -249,6 +249,8 @@ To fork the repository:
 
 - Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along.
 
+
+
 ### W3C Validator
 
 All codes for Project and App were tested using the [CI Python Linter](https://pep8ci.herokuapp.com/) and are valid.
@@ -287,15 +289,40 @@ All HTML returned as valid.
 
 #### Index Page
 
-#### Base HTML
+The lighthouse score on the Index page is showing a low score of 84 on performance. 
 
-#### New Booking
+- ![Index Page](media/images/README/index_lighthouse.png)
 
-#### Edit Booking
+This is due to the images affecting performance. 
+
+- ![Index Page Lighthouse Image 2](media/images/README/index_lighthouse2.png)
+
+This is an area I will need to address to improve the website overall. 
+
+#### My Bookings
+
+The lighthouse score on My Bookings Page is showing a performance score of 99, however the best practise is also showing a score of 83. 
+
+- ![My Bookings Page](media/images/README/mybookings_lighthouse.png)
+
+#### New Bookings
+
+The lighthouse score on My Bookings Page is showing a performance score of 98, however the best practise is also showing a score of 83. 
+
+- ![New Booking Page](media/images/README/newbooking_lighthouse.png)
+
+#### Edit Bookings
+
+The lighthouse score on My Bookings Page is showing a performance score of 98, however the best practise is also showing a score of 83. 
+
+- ![Edit Booking Page](media/images/README/editbooking_lighthouse.png)
 
 #### Booking Success
 
-#### My Bookings
+The lighthouse score on My Bookings Page is showing a performance score of 99, however the best practise is also showing a score of 83. 
+
+- ![Booking Success Page](media/images/README/bookingsuccess_lighthouse.png)
+
 
 ## Credits
 
