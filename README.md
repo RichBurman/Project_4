@@ -39,7 +39,7 @@ Live Link to the project website [Live link](https://rbproject-4-c2dc0a612356.he
       - [How to Fork](#how-to-fork)
       - [How to Clone](#how-to-clone)
   - [Testing](#testing)
-    - [Fully Testing](#fully-testing)
+    - [Full Testing](#full-testing)
     - [W3C Validator](#w3c-validator)
     - [Solved Bugs](#solved-bugs)
     - [Known Bugs](#known-bugs)
@@ -59,36 +59,36 @@ Live Link to the project website [Live link](https://rbproject-4-c2dc0a612356.he
 
 ## User Experience (UX)
 
-- Manchester United Supporter Travel Company is a online coach booking club that allows football supporters (Users) to book couch travel to a specific football match. The site allows supporters to view upcoming couch trips for upcoming games and book seats on the coach so they can travel in style to the football game.
+- Manchester United Supporters Travel Company is a online coach booking system that allows football supporters (Users) to book coach travel to a specific football match. The site allows supporters to view coach trips for upcoming Manchester United home and away games and book seats on a coach so they can travel in style to the football game.
 
 ### Key Information for the site
 
-- What trips are available to book.
-- Trip Details.
+- Match trips that are available to book.
+- Trip details.
 - How to create, edit and delete a booking.
-- To be able to review what bookings you have.
-- How to become a member and sign up.
-- User can see a live upcoming trip list on the home page which is updated as users on the site make bookings.
+- Allow the user to review the bookings they have made.
+- How to become a registered user and sign up.
+- User can see a live upcoming trip list on the home page where the remianing seats is updated as users on the site make bookings.
 -
 
 ### User Stories
 
 ![User Stories](media/images/README/userstories.png)
 
-The user stories were split into User and Admin.
+The user stories are split into User and Admin.
 
 User
 
-- As a Site User I can register an account so that I create and edit my trip bookings
-- As a Site User I can view a list of trips so that I can select one/many to book
-- As a Site User I can click on a trip so that I can find out full information about the trip and decide if I want to book
-- As a Site User I can create, read, update and delete bookings so that I can manage my trip bookings
-- As a User I can **make a booking and have the cost displayed** so that I see how much the trip will cost based on how many seats I have booked
+- As a Site User I can register an account so that I create and edit my trip bookings.
+- As a Site User I can view a list of trips so that I can select one/many to book.
+- As a Site User I can click on a trip so that I can find out full information about the trip and decide if I want to book.
+- As a Site User I can create, read, update and delete bookings so that I can manage my trip bookings.
+- As a User I can **make a booking and have the cost displayed** so that I see how much the trip will cost based on how many seats I have booked.
 
 Admin
 
-    - As a Admin I can create Trips so that Users can book onto the trips
-    - As a Admin I can create, read, update and delete any bookings so that I can manage the booking system
+    - As a Admin I can create Trips so that Users can book onto the trips.
+    - As a Admin I can create, read, update and delete any bookings so that I can manage the booking system.
 
 #### Client Goals
 
@@ -96,11 +96,11 @@ Admin
 - To make it easy for potential memebers to find a Trip and book seats easily.
 - To make it clear for members to create, edit and delete bookings.
 
-#### First Time Visior Goals
+#### First Time Visitor Goals
 
-- I want to find out what Manchester United Travel Company is and how I can take part.
+- I want to find out what Manchester United Supporters Travel Company is and how I can take part.
 - I want to be able to navigate the site easily to find information.
-- I want to be able to find their social links.
+- I want to be able to find their social media links.
 
 #### Returning and Frequent Visitor Goals
 
@@ -113,7 +113,7 @@ Admin
 
 ![Manchester United Travel Company Wesbite Color Palette](media/images/README/Coolors.png)
 
-- The website uses a palette of reds, whites and blacks that are linked to the colors of Manchester United. The color palette was created using the [Coolors](https://coolors.co/) website.
+- The website uses a palette of reds, whites and blacks that are linked to the colours of Manchester United Football Club. The colour palette was created using the [Coolors](https://coolors.co/) website.
 
 ### Typography
 
@@ -145,33 +145,35 @@ Three of the pages are accessible from the navigation bar (Home, My Bookings, an
 
 Booking success is only visiable to a user, once they have created a booking. Edit booking is only visiable to a user once they edit an existing booking.
 
-- ALl Pages on the website have:
+### All Pages on the website have:
 
-- If user has registered and logged in:
-- A responsive navigation bar at the top which allows the users to navigate through the site. To the left of the navigation bar is a space that when a user is registered and logged in displays Welcome 'User Name', this indicts to the user that they are logged in. To the right of this, are the links to the website pages (Home, Logout, My Bookings, New Booking). To allow a good user experience of the site, which the website is shown on smaller devices, the navigation bar changes to a burger toggler. This was implemented to give the site a clean look and to promote a good user experience, as users are used to seeing the burger icon when on smaller devices to navigate a site.
-- If the user is not logged in:
-- A responsive navigation bar at the top which allows the user to navigate through the site. The navigation bar has links to (Register and Login). All other links are hidden from non registered user, as the website requires you to be a registered user to make a booking. To allow a good user experience of the site, which the website is shown on smaller devices, the navigation bar changes to a burger toggler. This was implemented to give the site a clean look and to promote a good user experience, as users are used to seeing the burger icon when on smaller devices to navigate a site.
+If user has registered and logged in:
 
-- A footer which contain social media icon links to Facebook, Twitter, YouTube and Instagram. Icons were used as it keeps the footer clean and becuase they are universally recognisable.
+- A responsive navigation bar at the top of the page. This allows the users to navigate through the site. To the left of the navigation bar is a space that when a user is registered and logged in displays 'Welcome 'User Name', this displays to the user that they are logged in. To the right of this, are the links to the website pages (Home, Logout, My Bookings, New Booking). To allow a good user experience of the site, especially when the website is shown on smaller devices, the navigation bar changes to a burger toggler. This was not only implemented to give the site a clean look and easier navigation of the site as users are used to seeing the burger icon when on smaller devices.
 
-- Home Page
+If the user is not logged in:
+- A responsive navigation bar at the top which allows the user to navigate through the site. The navigation bar has links to (Register and Login). All other links are hidden from a non registered user, as the website requires you to be a registered user to make a booking. To allow a good user experience of the site, especially when the website is shown on smaller devices, the navigation bar changes to a burger toggler. This was implemented to give the site a clean look and to promote a good user experience, as users are used to seeing the burger icon when on smaller devices to navigate a site.
+
+- A footer that contains social media icon links to Facebook, Twitter, YouTube and Instagram. In this instance icons have been used to maintain the clean view of the footer as the icons are universally recognisable.
+
+### Home Page
 
 ![Home](media/images/README/home.png)
 
 - A clear heading informing the user what the site is about.
 - A basic section giving information to the user about the services offered by the website.
-- A live Upcoming Trip list, which displays the following to the user:
-- Trip ID - this is the ID number of the trip
-- Trip Name - this display the name of the upcoming trip to the user, informing them of the destination of the trip
-- Seats - Informing the user how many seats the coach has and therefore how many seats are available to book on each trip
-- Remaining Seats - Informs the user how many seats are available to book. This is a live number as once a user books a number of seats, it is subtracted from this number.
-- Price - the price of booking a seat on this trip.
+- A live 'Upcoming Trip' list, which displays the following to the user:
+    - Trip ID - this is the ID number of the trip
+    - Trip Name - this displays the name of the upcoming trip to the user, informing them of the destination of the trip
+    - Seats - Informing the user how many remaining seats the coach has and therefore how many seats are available to book on each trip
+    - Remaining Seats - Informs the user how many seats are available to book. This is a live number as once a user books a number of seats, it is subtracted from this number.
+    - Price - the price of booking a seat on the respective trip.
 
 ![Upcoming Trips](media/images/README/upcomingtrips.png)
 
-## Navigation Bar
+### Navigation Bar
 
-- The navigation bar allows users and visitors to navigate around the site.
+- The navigation bar allows users and visitors to navigate around the siteno matter the device used.
 
 ### Visitors
 
@@ -179,39 +181,39 @@ Booking success is only visiable to a user, once they have created a booking. Ed
 
 - Home - to take the user to the Home Page
 - Register - to take the user to the register/sign up page
-- Login - to take the user to the login page
+- Login - to take an already registered user to the login page
 
-### Registered logged in User
+#### Registered logged in User
 
 ![Logged in Users Nav](media/images/README/nav_user.png)
 
 - Welcome Username - Displays a welcome message and the user's username
 - Logout - allows the user to logout of the website
-- Home - take user to the Home Page
+- Home - take user to the 'Home Page'
 - My Bookings - take the user to My Bookings to view their bookings
 - New Booking - take the user to the new booking page to create a new booking
 
-### Admin logged in User
+#### Admin logged in User
 
 ![Logged in Admin Nav](media/images/README/nav_admin.png)
 
 - Welcome admin - Displays a welcome message and the admin name
 - Logout - allows the user to logout of the website
-- Home - take user to the Home Page
-- My Bookings - take the user to My Bookings to view their bookings
-- New Booking - take the user to the new booking page to create a new booking
+- Home - takes the user to the 'Home Page'.
+- My Bookings - takes the user to 'My Bookings' to view their bookings
+- New Booking - take the user to the 'New Booking' page to create a new booking
 - Admin - allows the admin to enter the [Admin Page](https://rbproject-4-c2dc0a612356.herokuapp.com/admin/)
 
 ## My Bookings
 
 ![My Bookings](media/images/README/mybookings.png)
 
-- This page displays to the user their bookings. It shows booking that are assigned to them.
+- This page displays to the user their bookings. It shows all booking that are assigned to them.
 - Trip Booked
 - Trip Date
 - Comments - Any comments the user made when they made their booking.
 - Seats Required - how many seats the user booked.
-- Total Cost - How much the total booking costs. It is the sum of the trip cost x seats required.
+- Total Cost - How much the total booking costs. This is calculated by taking the sum of the trip cost x the number of seats required.
 - Edit Button - this allows the user to enter the booking and edit the booking. (Directs them to the editbooking page)
 - Delete Button - this allows the user to delete the booking.
 
@@ -219,14 +221,14 @@ Booking success is only visiable to a user, once they have created a booking. Ed
 
 ![New Booking](media/images/README/newbooking.png)
 
-- This page contains a form which allows the user to make a new booking. It contains fields for the following:
+This page contains a form which allows the user to make a new booking. It contains fields for the following:
 
 - Date of Booking - This is set as a default of today's date, but can be edited by the user.
-- Selected Trip - This is a dropdown list, which allows the user to select from the Trips that are available to book.
+- Selected Trip - This is a dropdown menu, which allows the user to select from the Trips that are available to book.
 - Numbers of Seats Required - This allows the user to input how many seats they would like to book.
 - Additonal Comments - This field allows the user to input any comments about the booking that they want to make when they make their booking.
 
-Once a user confirms a booking it will update the live upcoming trip section on the home page
+Once a user confirms a booking, by selecting 'Book new trip' button, it will update the live upcoming trip seat section on the home page.
 
 ![Upcoming Trips](media/images/README/upcomingtrips.png)
 
@@ -236,29 +238,29 @@ As well as add the booking to the user my booking section.
 
 ### Edit Booking
 
-* - This page contains a form which allows the user to edit an existing booking. It contains fields for the following:
-* Date of Booking - This is set as a default of today's date, but can be edited by the user.
-* Selected Trip - This is a dropdown list, which allows the user to select from the Trips that are available to book.
-* Numbers of Seats Required - This allows the user to input how many seats they would like to book.
-* Additonal Comments - This field allows the user to input any comments about the booking that they want to make when they make their booking.
 
-- It allows the user to edit a existing booking and will update the database accordingly.
+This page contains a form which allows the user to edit an existing booking. It contains fields for the following:
+- Date of Booking - This is set as a default of today's date, but can be edited by the user.
+- Selected Trip - This is a dropdown list, which allows the user to select from the Trips that are available to book.
+- Numbers of Seats Required - This allows the user to input how many seats they would like to book.
+- Additonal Comments - This field allows the user to input any comments relating to the booking.
+- Allows the user to edit a existing booking and will update the database accordingly.
 
 ### Booking Success
 
-  ![Booking Success](media/images/README/bookingsuccess.png)
+![Booking Success](media/images/README/bookingsuccess.png)
 
-* The page contains a booking confirmation summary. It display the following to the user:
-* The name of the trip booked.
-* Number of Seats booked.
-* The total cost of the booking.
+The page contains a booking confirmation summary. It display the following to the user:
+- The name of the trip booked.
+- Number of Seats booked.
+- The total cost of the booking.
 
 ### Future Implementations
 
-- Create a About Us Page - to provide visitors and users of the site more information about the Manchester United Travel Company
+- Create an About Us Page - to provide visitors and users of the site with more information about the Manchester United Supporters Travel Company
 - Create a system where the User can pay for bookings online. At the moment the user merely makes the booking online and this is assigned to them. I would like to create a payment system where the user can pay for the booking and then this will provide them with a booking reference they can provide to the coach driver on the day to gain access to the coach.
 - A gallery page where the visitors/users can view images of previous trips to improve the user experience.
-- A Booking Trip page, where the user can view multiple upcoming bookings and this will also display which trips are sold out, close to being sold out etc.
+- A dedicated upcoming Booking Trip page, where the user can view multiple upcoming bookings and this will also display which trips are sold out or close to being sold out etc.
 
 ## Technologies Used
 
@@ -300,7 +302,7 @@ Pip - for install python packages
 
 ### Accessibility
 
-- I have been mindful during the coding to ensure that the website is as accessible friendly as possible. I hav eachieved this by:
+- I have been mindful during the coding to ensure that the website is as accessible and user friendly as possible. I have achieved this by:
 - Using semantic HTML.
 - Using descriptive alt attributes on images on the site.
 - Ensuring that there is a sufficient colour contrast throughout the site.
@@ -457,7 +459,7 @@ To fork the repository:
 
 ## Testing
 
-- Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along.
+Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along.
 
 ### Fully Testing
 
@@ -547,15 +549,15 @@ All HTML returned as valid.
 
 I had a number of bugs during design of the website.
 
-- I had an issue pulling through the total cost of a booking to display to a user on the my booking page. However, I fixed this, as I had not added total_cost to the booking model. This meant when the seats required was multipled by the price of the seat it now had a place to be stored in the database, whereas previous it did not.
+- I had an issue pulling through the total cost of a booking to display to a user on the my booking page. However, I fixed this, as I had not added total_cost to the booking model. This meant when the seats required was multipled by the price of a seat it now had a place to be stored in the database, whereas previously it did not.
 
-- I had an issue with adding in images to the website, as I was not using the bootstrap language to correctly insert images. I researched more information on bootstrap images and this resolved the issues.
+- I had an issue with adding in images to the website, as I was not using the bootstrap language to correctly insert images. I researched more information on bootstrap images and this resolved the issue.
 
 ### Known Bugs
 
 - Best Practise issue
 
-This is a bug I found during my lighthouse testing of my website. This is showing the following issue shown below.
+This is a bug I found during my lighthouse testing of my website. This is showing the following issue as displayed below.
 
 ![Best Practise Issue](media/images/README/bpractise_issue.png)
 
@@ -622,5 +624,5 @@ All football teams used in the project are from the Premier League [Premier Leag
 
 ### Acknowledgments
 
-My Code Institute Mentor
-My Code Institute Colleagues in Slack
+- My Code Institute Colleagues in Slack
+- Family for support throughout the project. 
