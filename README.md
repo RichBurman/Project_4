@@ -169,16 +169,19 @@ Booking success is only visiable to a user, once they have created a booking. Ed
 
 ![Upcoming Trips](media/images/README/upcomingtrips.png)
 
-- Navigation Bar
-  - The navigation bar allows users and visitors to navigate around the site.
-Visitors
+## Navigation Bar
+
+- The navigation bar allows users and visitors to navigate around the site.
+
+### Visitors
 
 ![Visitors Nav](media/images/README/nav_visit.png)
 
 - Home - to take the user to the Home Page
 - Register - to take the user to the register/sign up page
 - Login - to take the user to the login page
-Registered logged in User
+
+### Registered logged in User
 
 ![Logged in Users Nav](media/images/README/nav_user.png)
 
@@ -188,7 +191,7 @@ Registered logged in User
 - My Bookings - take the user to My Bookings to view their bookings
 - New Booking - take the user to the new booking page to create a new booking
 
-Admin logged in User
+### Admin logged in User
 
 ![Logged in Admin Nav](media/images/README/nav_admin.png)
 
@@ -199,7 +202,7 @@ Admin logged in User
 - New Booking - take the user to the new booking page to create a new booking
 - Admin - allows the admin to enter the [Admin Page](https://rbproject-4-c2dc0a612356.herokuapp.com/admin/)
 
-- My Bookings
+## My Bookings
 
 ![My Bookings](media/images/README/mybookings.png)
 
@@ -212,7 +215,7 @@ Admin logged in User
 - Edit Button - this allows the user to enter the booking and edit the booking. (Directs them to the editbooking page)
 - Delete Button - this allows the user to delete the booking.
 
-* New Booking
+### New Booking
 
 ![New Booking](media/images/README/newbooking.png)
 
@@ -231,7 +234,7 @@ As well as add the booking to the user my booking section.
 
 ![My Bookings](media/images/README/mybookings.png)
 
-- Edit Booking
+### Edit Booking
 
 * - This page contains a form which allows the user to edit an existing booking. It contains fields for the following:
 * Date of Booking - This is set as a default of today's date, but can be edited by the user.
@@ -241,7 +244,7 @@ As well as add the booking to the user my booking section.
 
 - It allows the user to edit a existing booking and will update the database accordingly.
 
-- Booking Success
+### Booking Success
 
   ![Booking Success](media/images/README/bookingsuccess.png)
 
